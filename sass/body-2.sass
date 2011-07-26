@@ -30,8 +30,7 @@
 				height: $banner-height
 				margin: 0
 				padding: 0
-				background: $accent
-
+				
 
 
 .body
@@ -67,17 +66,19 @@
 	h1
 		@extend .box
 		@extend .corner-top
-		font-family: "EmbedFont-1"
+		font-family: "Embed-Helvetica-bold"
 		position: relative
 		color: $option-title
 		background: $option-title-bg
 		width: ($option-width - ($h-gap *2))
 		margin: 0 auto
-		padding: 1em 0
-		font-size: 18px
+		padding: 1em 0 0.5em
+		font-size: 15px
 		font-weight: 100
-		text-transform: uppercase
 		text-align: left
+		text-transform: capitalize
+		word-spacing: -0.1em
+		letter-spacing: -0.07em
 	h3
 		@extend .box
 		@extend .corner-top
@@ -102,7 +103,7 @@
 	margin: 0 auto
 	padding: 0.5em 0
 	font-size: 11px
-	border-bottom: 1px dotted $line-color
+	border-bottom: 1px dotted $option-border
 	&:last-child
 		border-bottom: none
 		margin-bottom: ($v-gap / 2)
@@ -115,7 +116,7 @@
 		top: 5px
 		width: 7px
 		height: 7px
-		background: $secondary
+		background: $secondary-dark
 		font-size: 11px
 		text-align: center
 	p
@@ -131,7 +132,7 @@
 			font-size: 12px
 			color: $option-link
 			&:hover
-				color: $secondary
+				color: $option-link-hover
 				text-decoration: none
 					
 // Text-style sidebar box
@@ -213,18 +214,30 @@
 				margin: 0 ($h-gap / 2) ($v-gap / 2) 0
 				z-index: 100
 			h1
-				font-family: "EmbedFont-1"
+				font-family: "Embed-Helvetica-bold"
 				@extend .box
 				width: ($content-width - ($content-img-w + ($h-gap / 2)))
 				margin: $corner-radius 0 ($v-gap/3) ($content-img-w + ($h-gap / 2))
 				padding: 0 3em 0.5em $corner-radius
 				color: $section-title !important
-				font-size: 18px
+				font-size: 24px
 				font-weight: 100
-				text-transform: uppercase
-				word-spacing: .1em
-				letter-spacing: .05em
+				text-transform: capitalize
+				word-spacing: -0.1em
+				letter-spacing: -0.07em
 				border-bottom: 1px solid $section-lines
+			h4
+				@extend .font-trebuchet
+				@extend .box
+				width: ($content-width)
+				margin: $corner-radius 0 ($corner-radius * -1) 0
+				padding: 0 0 0 $corner-radius
+				color: $section-title
+				font-size: 12px
+				font-weight: bold
+				text-align: justify
+				text-transform: uppercase
+				line-height: 1.7em				
 			p
 				@extend .font-trebuchet
 				@extend .box

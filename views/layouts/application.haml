@@ -1,11 +1,11 @@
-- @sitename = "Site Name"
+- @sitename = "IFS2I"
 
 // MAIN NAVIGATION
 - @link1 = ["Home", "/home"]
-- @link2 = ["About", "/page2"]
-- @link3 = ["Services", "/page3"]
-- @link4 = ["Gallery", "/page4"]
-- @link5 = ["Contact", "/page5"]
+- @link2 = ["Presentation", "/presentation"]
+- @link3 = ["Close Protection Training", "/cpt"]
+- @link4 = ["Bodyguard Services", "/bodyguard"]
+- @link5 = ["Contact", "/contact"]
 
 // FOOTER LINKS
 - @linkA1 = ["link name", "/path"]
@@ -31,6 +31,8 @@
   %head
     %title= @sitename + @title + @subtitle
 
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+
     %link{:href => "/images/favicon.png", :rel => "icon"}
     %link{:href => "/images/appleIcon-1.png", :rel => "apple-touch-icon"}/
     %link{:href => "/images/appleIcon-2.png", :rel => "apple-touch-icon", :sizes => "72x72"}/
@@ -46,7 +48,6 @@
     %script{:type => "text/javascript", :src => "javascripts/jquery-1.5.min.js"}
     %script{:type => "text/javascript", :src => "javascripts/modernizr-1.6.min.js"}
     %script{:type => "text/javascript", :src => "javascripts/application.js"}
-    %script{:type => "text/javascript", :src => "javascripts/jquery.min.js"}
     %script{:type => "text/javascript", :src => "javascripts/jquery.hoverIntent.minified.js"}
     %script{:type => "text/javascript", :src => "javascripts/jquery.nivo.slider.pack.js"}
 
@@ -73,7 +74,7 @@
     :javascript
       $(window).load(function() {
           $('#slider').nivoSlider({
-                  effect:'fade', // Specify sets like: 'fold,fade,sliceDown'
+                  effect:'slideInLeft', // Specify sets like: 'fold,fade,sliceDown'
                   slices: 15, // For slice animations
                   boxCols: 19, // For box animations
                   boxRows: 8, // For box animations
@@ -102,69 +103,69 @@
       });
     
     
-    // DROPDOWN MENU  
-    / :javascript
-    /   $(document).ready(function() {
-    / 
-    / 
-    /     function megaHoverOver(){
-    /       $(this).find(".sub").stop().fadeTo('fast', 1).show();
-    / 
-    /       //Calculate width of all ul's
-    /       (function($) { 
-    /         jQuery.fn.calcSubWidth = function() {
-    /           rowWidth = 0;
-    /           //Calculate row
-    /           $(this).find("ul").each(function() {          
-    /             rowWidth += $(this).width(); 
-    /           }); 
-    /         };
-    /       })(jQuery); 
-    / 
-    /       if ( $(this).find(".row").length > 0 ) { //If row exists...
-    /         var biggestRow = 0; 
-    /         //Calculate each row
-    /         $(this).find(".row").each(function() {                 
-    /           $(this).calcSubWidth();
-    /           //Find biggest row
-    /           if(rowWidth > biggestRow) {
-    /             biggestRow = rowWidth;
-    /           }
-    /         });
-    /         //Set width
-    /         $(this).find(".sub").css({'width' :biggestRow});
-    /         $(this).find(".row:last").css({'margin':'0'});
-    / 
-    /       } else { //If row does not exist...
-    / 
-    /         $(this).calcSubWidth();
-    /         //Set Width
-    /         $(this).find(".sub").css({'width' : rowWidth});
-    / 
-    /       }
-    /     }
-    / 
-    /     function megaHoverOut(){ 
-    /       $(this).find(".sub").stop().fadeTo('fast', 0, function() {
-    /         $(this).hide(); 
-    /       });
-    /     }
-    / 
-    / 
-    /     var config = {    
-    /        sensitivity: 2, // number = sensitivity threshold (must be 1 or higher)    
-    /        interval: 100, // number = milliseconds for onMouseOver polling interval    
-    /        over: megaHoverOver, // function = onMouseOver callback (REQUIRED)    
-    /        timeout: 00, // number = milliseconds delay before onMouseOut    
-    /        out: megaHoverOut // function = onMouseOut callback (REQUIRED)    
-    /     };
-    / 
-    /     $("ul#topnav li .sub").css({'opacity':'0'});
-    /     $("ul#topnav li").hoverIntent(config);
-    / 
-    / 
-    / 
-    /   });
+    / DROPDOWN MENU  
+    :javascript
+      $(document).ready(function() {
+    
+    
+        function megaHoverOver(){
+          $(this).find(".sub").stop().fadeTo('fast', 1).show();
+    
+          //Calculate width of all ul's
+          (function($) { 
+            jQuery.fn.calcSubWidth = function() {
+              rowWidth = 0;
+              //Calculate row
+              $(this).find("ul").each(function() {          
+                rowWidth += $(this).width(); 
+              }); 
+            };
+          })(jQuery); 
+    
+          if ( $(this).find(".row").length > 0 ) { //If row exists...
+            var biggestRow = 0; 
+            //Calculate each row
+            $(this).find(".row").each(function() {                 
+              $(this).calcSubWidth();
+              //Find biggest row
+              if(rowWidth > biggestRow) {
+                biggestRow = rowWidth;
+              }
+            });
+            //Set width
+            $(this).find(".sub").css({'width' :biggestRow});
+            $(this).find(".row:last").css({'margin':'0'});
+    
+          } else { //If row does not exist...
+    
+            $(this).calcSubWidth();
+            //Set Width
+            $(this).find(".sub").css({'width' : rowWidth});
+    
+          }
+        }
+    
+        function megaHoverOut(){ 
+          $(this).find(".sub").stop().fadeTo('fast', 0, function() {
+            $(this).hide(); 
+          });
+        }
+    
+    
+        var config = {    
+           sensitivity: 2, // number = sensitivity threshold (must be 1 or higher)    
+           interval: 100, // number = milliseconds for onMouseOver polling interval    
+           over: megaHoverOver, // function = onMouseOver callback (REQUIRED)    
+           timeout: 00, // number = milliseconds delay before onMouseOut    
+           out: megaHoverOut // function = onMouseOut callback (REQUIRED)    
+        };
+    
+        $("ul#topnav li .sub").css({'opacity':'0'});
+        $("ul#topnav li").hoverIntent(config);
+    
+    
+    
+      });
 
 
   
@@ -185,20 +186,40 @@
               =@link2[0]
             .sub
               %ul
-                / / %li
-                / /   %h2 Header
                 / %li
-                /   %a{:href => "#"} Navigation Link
-                / %li
-                /   %a{:href => "#"} Navigation Link
+                /   %h2 Header
+                %li
+                  %a{:href => @link2[1]+"#Africa"} in Africa
+                %li
+                  %a{:href => @link2[1]+"#Russia"} in Russia
                 / %li
                 /   %a{:href => "#"} Navigation Link
           %li
             %a#three.topnav{:href => @link3[1]}
               =@link3[0]
+            .sub
+              %ul
+                / %li
+                /   %h2 Header
+                %li
+                  %a{:href => @link3[1]+"#Africa"} in France
+                %li
+                  %a{:href => @link3[1]+"#Russia"} in Russia
+                %li
+                  %a{:href => @link3[1]+"#PSD"} PSD &amp; Cohesion
           %li
             %a#four.topnav{:href => @link4[1]}
               =@link4[0]
+            .sub
+              %ul
+                / %li
+                /   %h2 Header
+                %li
+                  %a{:href => @link3[1]+"#private"} Private Bodyguards
+                %li
+                  %a{:href => @link3[1]+"#a&a"} Audit &amp; Analysis
+                %li
+                  %a{:href => @link3[1]+"#air"} Aircraft Protection
           %li
             %a#five.topnav{:href => @link5[1]}
               =@link5[0]

@@ -3,82 +3,83 @@
 @import compass/css3
 
 // COLOR DEFINITIONS
-$primary: #003461
-$primary-light: lighten(adjust-hue($primary, 0%), +20)
-//$primary-light: #0a65b4
-$primary-dark: darken($primary, +5)
-$secondary: #d8a41c
-//$secondary-light: lighten(adjust-hue($secondary, 0%), +10)
-$secondary-light: #ebd716
-$secondary-dark: darken($secondary, +5)
+$primary: #680000
+//$primary-light: lighten(adjust-hue($primary, 0%), +20)
+$primary-light: #dc2e2c
+$primary-dark: #ad1b1a
+$secondary: #efecde
+$secondary-light: lighten(adjust-hue($secondary, 0%), +10)
+//$secondary-light: #ebd716
+$secondary-dark: #dad7cb
 $accent: #900
 $apple-highlight:	#b4d5ff
 
 $line-color: #ddd
 
 $gray-dark: #333
-$gray-med: #666
+$gray-med: #676767
 $gray-light: #efefef
 
 
 // COLOR APPLICATION
-$html-bg:									#efefef
+$html-bg:									#fff
 $body-bg:									$html-bg
 $center-container-bg:			#fff
 
 $text-dark:								#000
 $text-light:							$gray-med
-$text-highlight:					$apple-highlight
+$text-highlight:					$secondary-dark
 
 $header-title:						#fff
 $header-text:							#fff
 $header-link:							$secondary
 $header-link-hover:				#000
-$header-border:						$gray-med
+$header-border:						#000
 
-$nav-text:								$gray-med
-$nav-text-hover:					#fff
+$nav-text:								$primary
+$nav-text-hover:					$primary-light
 $nav-lines:								$primary-dark
 $nav-bg:									transparent
-$nav-dropdown-text:				$gray-med
+$nav-dropdown-text:				$primary-light
 $nav-dropdown-hover:			#fff
-$nav-dropdown-bg:					$primary-dark
+$nav-dropdown-bg:					$primary
 $nav-dropdown-bg-hover:		$primary-light
 $nav-dropdown-border:			$gray-dark
 $nav-dropdown-accent:			$secondary
 
 $image-slider-bg:					$gray-light
-$image-slider-title:			$primary-light
+$image-slider-title:			$primary-dark
 $image-slider-text: 			$gray-dark
 $image-slider-link:				#fff
 $image-slider-link-hover:	#fff
 $image-slider-border:			$line-color
 
-$section-title:						$primary-light
+$section-title:						$primary-dark
 $section-text:						$text-light
 $section-lines:						$gray-light
 $section-border:					$secondary
 
-$option-title:						$primary-light
+$option-title:						$primary-dark
 $option-title-bg:					transparent
 $option-text:							$gray-med
-$option-link:							$secondary
-$option-link-hover:				$secondary
-$option-bg:								$gray-light
-$option-border:						$line-color
+$option-link:							$primary
+$option-link-hover:				$primary-light
+$option-bg:								$secondary
+$option-border:						$secondary-dark
 
-$footer-title:						$gray-med
-$footer-text:							$gray-med
-$footer-link:							$gray-med
-$footer-link-hover:				$primary-light
-$footer-border:						$line-color
+$footer-title:						$primary
+$footer-text:							$primary
+$footer-link:							$secondary
+$footer-link-hover:				$secondary-dark
+$footer-bg:								$primary-dark
+$footer-border:						$primary
 
-$m3c-bg:									$secondary
-$m3c-border:							$secondary-dark
-$m3c-text:								$gray-light
-$m3c-link:								$primary
-$m3c-link-hover:					#fff
-$m3c-link-border:					$line-color
+$m3c-bg:									$primary
+$m3c-border:							#000
+$m3c-text:								$primary-light
+$m3c-link:								$secondary
+$m3c-link-hover:					$secondary-dark
+$m3c-link-border:					$secondary-dark
 
 $opacity:									0.75
 $opacity-pc:							($opacity*100)			// DO NOT CHANGE, IS UPDATED BY LINE ABOVE
@@ -88,40 +89,34 @@ $opacity-pc:							($opacity*100)			// DO NOT CHANGE, IS UPDATED BY LINE ABOVE
 
 // GRADIENTS
 .bg-gradient-primary
-	background: $primary
-	+linear-gradient(color-stops($primary-light, $primary))	
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from($primary-light), to($primary))
+	/* For Mozilla/Gecko (Firefox etc) */
+	background: -moz-linear-gradient(top, $primary-light, $primary)
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary)
+	/* For Internet Explorer 8 */
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary)
 
 .bg-gradient-reverse
-	background: $primary
-	+linear-gradient(color-stops((lighten($primary-light, 5%)), (lighten($primary, 5%))))
-
-.bg-gradient-dark
-	background: $primary
-	+linear-gradient(color-stops((darken($primary-light, 5%)), (darken($primary, 5%))))
-
-.bg-gradient-left
-	background: $primary
-	+linear-gradient(color-stops($primary, $primary-light), left)
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from($primary), to($primary-light))
+	/* For Mozilla/Gecko (Firefox etc) */
+	background: -moz-linear-gradient(top, $primary, $primary-light)
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light)
+	/* For Internet Explorer 8 */
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light)
 
 .bg-gradient-secondary
-	background: $secondary
-	+linear-gradient(color-stops($secondary, $secondary-light))
-
-.bg-gradient-secondary-light
-	background: $primary
-	+linear-gradient(color-stops((lighten($secondary, 5%)), (lighten($secondary-light, 5%))))
-
-.bg-gradient-secondary-reverse
-	background: $secondary
-	+linear-gradient(color-stops($secondary-light, $secondary))
-	
-.bg-gradient-gray-light
-	background: $gray-light
-	+linear-gradient(color-stops($gray-light, #fff))
-
-.bg-gradient-gray-dark
-	background: $gray-med
-	+linear-gradient(color-stops($gray-med, $gray-dark))
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from($secondary-dark), to($secondary))
+	/* For Mozilla/Gecko (Firefox etc) */
+	background: -moz-linear-gradient(top, $secondary-dark, $secondary)
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-dark, endColorstr=$secondary)
+	/* For Internet Explorer 8 */
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-dark, endColorstr=$secondary)
 
 
 // CURSOR HIGHLIGHTING
