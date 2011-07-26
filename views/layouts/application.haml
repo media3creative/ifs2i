@@ -8,21 +8,21 @@
 - @link5 = ["Contact", "/contact"]
 
 // FOOTER LINKS
-- @linkA1 = ["link name", "/path"]
-- @linkA2 = ["link name", "/path"]
+- @linkA1 = ["in Africa", @link2[1]+"#"+"Africa"]
+- @linkA2 = ["in Russia", @link2[1]+"#"+"Russia"]
 - @linkA3 = ["link name", "/path"]
 - @linkA4 = ["link name", "/path"]
 - @linkA5 = ["link name", "/path"]
 
-- @linkB1 = ["link name", "/path"]
-- @linkB2 = ["link name", "/path"]
-- @linkB3 = ["link name", "/path"]
+- @linkB1 = ["in France", @link3[1]+"#"+"France"]
+- @linkB2 = ["in Russia", @link3[1]+"#"+"Russia"]
+- @linkB3 = ["PSD & COHESION", @link3[1]+"#"+"PSD"]
 - @linkB4 = ["link name", "/path"]
 - @linkB5 = ["link name", "/path"]
 
-- @linkC1 = ["link name", "/path"]
-- @linkC2 = ["link name", "/path"]
-- @linkC3 = ["link name", "/path"]
+- @linkC1 = ["Private Bodyguards", @link4[1]+"#"+"private"]
+- @linkC2 = ["Audit & Analysis", @link4[1]+"#"+"a&a"]
+- @linkC3 = ["Aircraft Protection", @link4[1]+"#"+"air"]
 - @linkC4 = ["link name", "/path"]
 - @linkC5 = ["link name", "/path"]
 
@@ -232,35 +232,35 @@
         .content
           &nbsp;
           .column
-            %h4 Group One
+            %h4=@link2[0]
             %a{:href => @linkA1[1]}
               =@linkA1[0]
             %a{:href => @linkA2[1]}
               =@linkA2[0]
-            %a{:href => @linkA3[1]}
-              =@linkA3[0]
-            %a{:href => @linkA4[1]}
-              =@linkA4[0]
+            / %a{:href => @linkA3[1]}
+            /   =@linkA3[0]
+            / %a{:href => @linkA4[1]}
+            /   =@linkA4[0]
           .column
-            %h4 Group Two
+            %h4=@link3[0]
             %a{:href => @linkB1[1]}
               =@linkB1[0]
             %a{:href => @linkB2[1]}
               =@linkB2[0]
             %a{:href => @linkB3[1]}
               =@linkB3[0]
-            %a{:href => @linkB4[1]}
-              =@linkB4[0]
+            / %a{:href => @linkB4[1]}
+            /   =@linkB4[0]
           .column
-            %h4 Group Three
+            %h4=@link4[0]
             %a{:href => @linkC1[1]}
               =@linkC1[0]
             %a{:href => @linkC2[1]}
               =@linkC2[0]
             %a{:href => @linkC3[1]}
               =@linkC3[0]
-            %a{:href => @linkC4[1]}
-              =@linkC4[0]  
+            / %a{:href => @linkC4[1]}
+            /   =@linkC4[0]  
               
                   
     .m3c-bar
