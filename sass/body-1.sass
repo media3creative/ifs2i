@@ -27,17 +27,17 @@
 				a.container
 					@extend .container-setup
 					margin: 0px ($h-gap - 1) 0 0
-					//background: $accent-color url("/images/home_left.jpg") no-repeat
+					background: url(/images/home_left.jpg) top right no-repeat
 			.middle
 				a.container
 					@extend .container-setup
 					margin: 0px ($h-gap - 1) 0 0
-					//background: $accent-color url("/images/home_center.jpg") no-repeat
+					background: transparent url(/images/home_center.jpg) no-repeat
 			.right
 				a.container
 					@extend .container-setup
 					margin: 0
-					//background: $accent-color url("/images/home_right.jpg") no-repeat
+					background: transparent url(/images/home_right.jpg) no-repeat
 
 
 .container-setup
@@ -49,27 +49,25 @@
 	+float-left
 	width: (($inside-width - ($h-gap * 2)) / 3)
 	height: $option-height
-	background: $option-bg
+	//background: $option-bg
 	border: 1px solid $option-border
 	z-index: 20
 	h1
 		@extend .box
 		font-family: "EmbedFont-1"
 		position: absolute
-		top: ($v-gap * 0.75)
-		left: ($h-gap * 0.75)
+		top: ($v-gap * 0.6)
+		left: ($h-gap * 0.6)
 		margin: 0 ($h-gap * 0.75) 0 0
 		color: $option-title
 		font-size: 24px
 		font-weight: 100
-		word-spacing: .1em
-		letter-spacing: .05em
 	h3
 		@extend .box
 		@extend .font-base
 		position: absolute
-		top: 75px
-		left: ($h-gap * 0.75)
+		top: 65px
+		left: ($h-gap * 0.6)
 		margin: 0 76px 12px 0
 		color: $option-text
 		font-size: 12px
@@ -91,7 +89,14 @@
 		text-decoration: none
 		@extend .opaque
 		
-		
+
+.middle h3
+	top: 85px !important
+	margin-right: 130px !important
+	
+.right h3
+	top: 85px !important
+	margin-right: 130px !important
 		
 		
 		

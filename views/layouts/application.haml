@@ -8,21 +8,21 @@
 - @link5 = ["Contact", "/contact"]
 
 // FOOTER LINKS
-- @linkA1 = ["in Africa", @link2[1]+"#"+"Africa"]
-- @linkA2 = ["in Russia", @link2[1]+"#"+"Russia"]
+- @linkA1 = ["(713) 7778 0790", "ssss"]
+- @linkA2 = ["office.us@ifs2i.com", "mailto:office.us@ifs2i.com"]
 - @linkA3 = ["link name", "/path"]
 - @linkA4 = ["link name", "/path"]
 - @linkA5 = ["link name", "/path"]
 
-- @linkB1 = ["in France", @link3[1]+"#"+"France"]
-- @linkB2 = ["in Russia", @link3[1]+"#"+"Russia"]
-- @linkB3 = ["PSD & COHESION", @link3[1]+"#"+"PSD"]
+- @linkB1 = ["Facebook", "http://www.facebook.com/name"]
+- @linkB2 = ["Twitter", "http://www.twitter.com/name"]
+- @linkB3 = ["LinkedIn", "http://www.linkedin.com/name"]
 - @linkB4 = ["link name", "/path"]
 - @linkB5 = ["link name", "/path"]
 
-- @linkC1 = ["Private Bodyguards", @link4[1]+"#"+"private"]
-- @linkC2 = ["Audit & Analysis", @link4[1]+"#"+"a&a"]
-- @linkC3 = ["Aircraft Protection", @link4[1]+"#"+"air"]
+- @linkC1 = ["ssss", "ssss"]
+- @linkC2 = ["ssss", "ssss"]
+- @linkC3 = ["ssss", "ssss"]
 - @linkC4 = ["link name", "/path"]
 - @linkC5 = ["link name", "/path"]
 
@@ -227,40 +227,30 @@
 
     .content
       = yield
-    #footer
-      .center
-        .content
-          &nbsp;
-          .column
-            %h4=@link2[0]
-            %a{:href => @linkA1[1]}
-              =@linkA1[0]
-            %a{:href => @linkA2[1]}
-              =@linkA2[0]
-            / %a{:href => @linkA3[1]}
-            /   =@linkA3[0]
-            / %a{:href => @linkA4[1]}
-            /   =@linkA4[0]
-          .column
-            %h4=@link3[0]
-            %a{:href => @linkB1[1]}
-              =@linkB1[0]
-            %a{:href => @linkB2[1]}
-              =@linkB2[0]
-            %a{:href => @linkB3[1]}
-              =@linkB3[0]
-            / %a{:href => @linkB4[1]}
-            /   =@linkB4[0]
-          .column
-            %h4=@link4[0]
-            %a{:href => @linkC1[1]}
-              =@linkC1[0]
-            %a{:href => @linkC2[1]}
-              =@linkC2[0]
-            %a{:href => @linkC3[1]}
-              =@linkC3[0]
-            / %a{:href => @linkC4[1]}
-            /   =@linkC4[0]  
+      #footer
+        .center
+          .content
+            &nbsp;
+            .row
+              %p.logo-sm
+                %img{:src => "/images/logo-sm.png", :alt => "IFS2I Logo"}
+            .row
+              %p
+                =@linkA1[0]
+                =" - "
+                %a{:href => @linkA2[1]}
+                  =@linkA2[0]
+            .row
+              %p
+                %a{:href => @linkB1[1], :target => "_blank"} 
+                  %img.icon{:src => "/images/facebook-color.png"}
+                  =@linkB1[0]              
+                %a{:href => @linkB2[1], :target => "_blank"} 
+                  %img.icon{:src => "/images/twitter-color.png"}
+                  =@linkB2[0]
+                %a{:href => @linkB3[1], :target => "_blank"} 
+                  %img.icon{:src => "/images/linkedin-color.png"}
+                  =@linkB3[0]
               
                   
     .m3c-bar
@@ -271,9 +261,4 @@
         :markdown
           Powered by [Media 3 Creative](http://media3creative.com/)
           
-          
-          
-          
-          
-          <script type="text/javascript" src="http://use.typekit.com/mig2hwk.js"></script>
-          <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+

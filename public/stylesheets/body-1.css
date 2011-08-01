@@ -167,7 +167,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: url(/images/contBG.png) repeat-y;
+  background: white;
+  border-left: 1px solid #dad7cb;
+  border-right: 1px solid #dad7cb;
 }
 
 .box, .center-container, .body .center, .body, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
@@ -357,48 +359,48 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .body .center .content {
 @extent .box;
-  width: 870px;
+  width: 900px;
   margin: 0 auto;
   padding: 0;
 }
 .body .center .content .left a.container {
   margin: 0px 29px 0 0;
+  background: url(/images/home_left.jpg) top right no-repeat;
 }
 .body .center .content .middle a.container {
   margin: 0px 29px 0 0;
+  background: transparent url(/images/home_center.jpg) no-repeat;
 }
 .body .center .content .right a.container {
   margin: 0;
+  background: transparent url(/images/home_right.jpg) no-repeat;
 }
 
 .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
   position: relative;
   display: inline;
   float: left;
-  width: 270px;
+  width: 280px;
   height: 200px;
-  background: #efecde;
   border: 1px solid #dad7cb;
   z-index: 20;
 }
 .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
   font-family: "EmbedFont-1";
   position: absolute;
-  top: 22.5px;
-  left: 22.5px;
+  top: 18px;
+  left: 18px;
   margin: 0 22.5px 0 0;
   color: #ad1b1a;
   font-size: 24px;
   font-weight: 100;
-  word-spacing: 0.1em;
-  letter-spacing: 0.05em;
 }
 .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3 {
   position: absolute;
-  top: 75px;
-  left: 22.5px;
+  top: 65px;
+  left: 18px;
   margin: 0 76px 12px 0;
-  color: #676767;
+  color: black;
   font-size: 12px;
   font-weight: 200;
   line-height: 1.3em;
@@ -415,4 +417,14 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .container-setup:hover, .body .center .content .left a.container:hover, .body .center .content .middle a.container:hover, .body .center .content .right a.container:hover {
   text-decoration: none;
+}
+
+.middle h3 {
+  top: 85px !important;
+  margin-right: 130px !important;
+}
+
+.right h3 {
+  top: 85px !important;
+  margin-right: 130px !important;
 }

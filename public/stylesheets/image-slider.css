@@ -167,7 +167,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: url(/images/contBG.png) repeat-y;
+  background: white;
+  border-left: 1px solid #dad7cb;
+  border-right: 1px solid #dad7cb;
 }
 
 .box, .center-container, .image-slider .center, .image-slider, .image-slider .center .captionContainer, .image-slider .center .captionContainer h1, .image-slider .center .captionContainer h3, .image-slider .center .captionContainer p.link, .nivoSlider, .nivoSlider img, #slider-wrapper, #slider {
@@ -407,7 +409,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 .nivoSlider {
   position: relative;
-  width: 870px;
+  width: 900px;
   height: 300px;
 }
 
@@ -415,7 +417,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 870px;
+  width: 900px;
   height: 300px;
 }
 
@@ -470,7 +472,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 .nivo-directionNav {
-  width: 870px;
+  width: 900px;
   margin: 0;
   padding: 0;
 }
@@ -510,7 +512,7 @@ a.nivo-nextNav {
 #slider-wrapper {
   font-family: "EmbedFont-1";
   position: relative;
-  width: 870px;
+  width: 900px;
   height: 300px;
   margin: 0 auto;
   overflow: hidden;
@@ -520,7 +522,7 @@ a.nivo-nextNav {
 
 #slider {
   position: relative;
-  width: 870px;
+  width: 900px;
   height: 300px;
 }
 

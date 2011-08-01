@@ -408,7 +408,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: url(/images/contBG.png) repeat-y;
+  background: white;
+  border-left: 1px solid #dad7cb;
+  border-right: 1px solid #dad7cb;
 }
 
 .box, .center-container, .content {
