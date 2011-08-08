@@ -2,9 +2,9 @@
 
 // MAIN NAVIGATION
 - @link1 = ["Home", "/home"]
-- @link2 = ["Presentation", "/presentation"]
-- @link3 = ["Close Protection Training", "/cpt"]
-- @link4 = ["Bodyguard Services", "/bodyguard"]
+- @link2 = ["About Us", "/about"]
+- @link3 = ["Services", "/services"]
+- @link4 = ["Security Training", "/training"]
 - @link5 = ["Contact", "/contact"]
 
 // FOOTER LINKS
@@ -14,10 +14,10 @@
 - @linkA4 = ["link name", "/path"]
 - @linkA5 = ["link name", "/path"]
 
-- @linkB1 = ["Facebook", "http://www.facebook.com/name"]
+- @linkB1 = ["Facebook", "http://www.facebook.com/pages/Ifs2i-Security-Consulting/171593209578690"]
 - @linkB2 = ["Twitter", "http://www.twitter.com/name"]
 - @linkB3 = ["LinkedIn", "http://www.linkedin.com/name"]
-- @linkB4 = ["link name", "/path"]
+- @linkB4 = ["YouTube", "http://www.youtube.com/user/IFSII"]
 - @linkB5 = ["link name", "/path"]
 
 - @linkC1 = ["ssss", "ssss"]
@@ -184,42 +184,24 @@
           %li
             %a#two.topnav{:href => @link2[1]}
               =@link2[0]
-            .sub
-              %ul
-                / %li
-                /   %h2 Header
-                %li
-                  %a{:href => @link2[1]+"#Africa"} in Africa
-                %li
-                  %a{:href => @link2[1]+"#Russia"} in Russia
-                / %li
-                /   %a{:href => "#"} Navigation Link
           %li
-            %a#three.topnav{:href => @link3[1]}
+            %a#three.topnav{:href => "#"}
               =@link3[0]
             .sub
               %ul
                 / %li
                 /   %h2 Header
                 %li
-                  %a{:href => @link3[1]+"#Africa"} in France
+                  %a{:href => "/security"} Security Consulting
                 %li
-                  %a{:href => @link3[1]+"#Russia"} in Russia
+                  %a{:href => "/bodyguard"} Bodyguard Services
                 %li
-                  %a{:href => @link3[1]+"#PSD"} PSD &amp; Cohesion
+                  %a{:href => "/guard"} Guard Services
+                %li
+                  %a{:href => "/alarm"} Alarm Installation
           %li
             %a#four.topnav{:href => @link4[1]}
               =@link4[0]
-            .sub
-              %ul
-                / %li
-                /   %h2 Header
-                %li
-                  %a{:href => @link4[1]+"#private"} Private Bodyguards
-                %li
-                  %a{:href => @link4[1]+"#a&a"} Audit &amp; Analysis
-                %li
-                  %a{:href => @link4[1]+"#air"} Aircraft Protection
           %li
             %a#five.topnav{:href => @link5[1]}
               =@link5[0]
@@ -245,12 +227,15 @@
                 %a{:href => @linkB1[1], :target => "_blank"} 
                   %img.icon{:src => "/images/facebook-color.png"}
                   =@linkB1[0]              
-                %a{:href => @linkB2[1], :target => "_blank"} 
-                  %img.icon{:src => "/images/twitter-color.png"}
-                  =@linkB2[0]
-                %a{:href => @linkB3[1], :target => "_blank"} 
-                  %img.icon{:src => "/images/linkedin-color.png"}
-                  =@linkB3[0]
+                / %a{:href => @linkB2[1], :target => "_blank"} 
+                /   %img.icon{:src => "/images/twitter-color.png"}
+                /   =@linkB2[0]
+                / %a{:href => @linkB3[1], :target => "_blank"} 
+                /   %img.icon{:src => "/images/linkedin-color.png"}
+                /   =@linkB3[0]
+                %a{:href => @linkB4[1], :target => "_blank"} 
+                  %img.icon{:src => "/images/youtube.jpeg"}
+                  =@linkB4[0]
               
                   
     .m3c-bar

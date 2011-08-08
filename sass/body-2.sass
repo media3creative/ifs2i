@@ -150,6 +150,16 @@
 		line-height: 1.7em
 		&:last-child
 			margin-bottom: ($v-gap / 2)
+		img.flag
+			@extend .box
+			position: relative
+			width: 26px
+			height: 14px
+			border: none
+			top: 1px
+			margin: 0 3px 0 0
+			padding: 0
+			border: 1px solid $secondary-dark
 
 // Button-style sidebar box
 .button
@@ -301,4 +311,13 @@
 	h1, p
 		width: $content-width !important
 		margin-left: 0 !important
+		
+		
+.youtube-sm   // In sidebar
+	@extend .font-base
+	@extend .box
+	width: ($option-width - ($h-gap *2))
+	margin: 0 auto ($v-gap / 2)
+	padding: 0
+
 

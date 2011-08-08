@@ -14,7 +14,7 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .subnav h3, .text h3, .button h3, .form h3, .text p, .link, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p {
+.font-trebuchet, .font-base, .subnav h3, .text h3, .button h3, .form h3, .text p, .youtube-sm, .link, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -172,7 +172,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-right: 1px solid #dad7cb;
 }
 
-.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .sidebar, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3, .link, .link p, .text p, .button p.link, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, .container-setup, .subnav, .text, .button, .form {
+.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .sidebar, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3, .link, .link p, .text p, .text p img.flag, .button p.link, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, .container-setup, .subnav, .text, .button, .form, .youtube-sm {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -219,7 +219,7 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .subnav h3, .text h3, .button h3, .form h3, .text p, .link, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p {
+.font-trebuchet, .font-base, .subnav h3, .text h3, .button h3, .form h3, .text p, .youtube-sm, .link, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -479,6 +479,16 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .text p:last-child {
   margin-bottom: 15px;
 }
+.text p img.flag {
+  position: relative;
+  width: 26px;
+  height: 14px;
+  border: none;
+  top: 1px;
+  margin: 0 3px 0 0;
+  padding: 0;
+  border: 1px solid #dad7cb;
+}
 
 .button p.link {
   position: relative;
@@ -618,4 +628,10 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .no-image h1, .no-image p {
   width: 584px !important;
   margin-left: 0 !important;
+}
+
+.youtube-sm {
+  width: 220px;
+  margin: 0 auto 15px;
+  padding: 0;
 }

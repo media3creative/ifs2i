@@ -1,0 +1,46 @@
+- @title = " | About Us"
+- @subtitle = ""
+- @body_class = "two"
+
+- @sub0 = ["About Us", "/about"]
+- @sub1 = ["in Africa", "Africa"]
+- @sub2 = ["in Russia", "Russia"]
+
+%link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+
+
+#two.banner
+  .center
+    .content
+      %img.banner{:alt => "", :src => "/images/banner-4.jpg"}
+
+
+
+.body
+  .center
+    .content
+      #two.sidebar
+        / .subnav
+        /   %h1=@sub0[0]
+        /   .link
+        /     %h5 
+        /     %p
+        /       %a{:href => "#"+@sub1[1]}
+        /         =@sub1[0]
+        /   .link
+        /     %h5 
+        /     %p
+        /       %a{:href => "#"+@sub2[1]}
+        /         =@sub2[0]
+        .text
+          %h1 Featured Video
+          .youtube-sm          
+            %iframe{:frameborder => "0", :height => "95", :src => "http://www.dailymotion.com/embed/video/xanlo0?width=220&theme=slayer&foreground=%23AD1B1A&highlight=%23FFFFFF&background=%23000000", :width => "220"}
+    
+
+      #two.main
+        .content
+          %a{:name => @sub0[1]}
+          .section.no-image
+            %h1=@sub0[0]
+            %p Your text will appear here.

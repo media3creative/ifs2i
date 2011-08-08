@@ -387,7 +387,7 @@ ul#topnav {
   float: right;
   margin: 20px 30px 0 190px;
   padding: 0;
-  color: #680000;
+  color: #dad7cb;
   letter-spacing: 0.05em;
   list-style: none;
   z-index: 50;
@@ -410,7 +410,7 @@ ul#topnav li a {
 ul#topnav a.topnav {
   margin: 6px -1px 0 0;
   padding: 0.4em 1.3em 0.5em 1.3em;
-  color: #680000;
+  color: #dad7cb;
   font-size: 13px;
   text-align: center;
 }
