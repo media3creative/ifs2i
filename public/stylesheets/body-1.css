@@ -1,4 +1,4 @@
-.font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.font-helvetica, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -14,7 +14,7 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
+.font-trebuchet, .font-base, .container-setup h3, .body .center .content .lolb a.container h3, .body .center .content .lilb a.container h3, .body .center .content .rilb a.container h3, .body .center .content .rolb a.container h3, .container-setup p.link, .body .center .content .lolb a.container p.link, .body .center .content .lilb a.container p.link, .body .center .content .rilb a.container p.link, .body .center .content .rolb a.container p.link {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -98,7 +98,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-top-right-radius: 6px;
 }
 
-.corner-right {
+.corner-right, .container-setup p.link, .body .center .content .lolb a.container p.link, .body .center .content .lilb a.container p.link, .body .center .content .rilb a.container p.link, .body .center .content .rolb a.container p.link {
   -moz-border-radius-topright: 6px;
   -khtml-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
@@ -131,7 +131,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
+.corner-all, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -144,16 +144,16 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.clearfix, .body, .body .center, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.clearfix, .body, .body .center, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container {
   zoom: 1;
 }
-.clearfix:before, .body:before, .body .center:before, .container-setup:before, .body .center .content .left a.container:before, .body .center .content .middle a.container:before, .body .center .content .right a.container:before {
+.clearfix:before, .body:before, .body .center:before, .container-setup:before, .body .center .content .lolb a.container:before, .body .center .content .lilb a.container:before, .body .center .content .rilb a.container:before, .body .center .content .rolb a.container:before {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.clearfix:after, .body:after, .body .center:after, .container-setup:after, .body .center .content .left a.container:after, .body .center .content .middle a.container:after, .body .center .content .right a.container:after {
+.clearfix:after, .body:after, .body .center:after, .container-setup:after, .body .center .content .lolb a.container:after, .body .center .content .lilb a.container:after, .body .center .content .rilb a.container:after, .body .center .content .rolb a.container:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -172,14 +172,14 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-right: 1px solid #dad7cb;
 }
 
-.box, .center-container, .body .center, .body, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
+.box, .center-container, .body .center, .body, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container, .container-setup h1, .body .center .content .lolb a.container h1, .body .center .content .lilb a.container h1, .body .center .content .rilb a.container h1, .body .center .content .rolb a.container h1, .container-setup h3, .body .center .content .lolb a.container h3, .body .center .content .lilb a.container h3, .body .center .content .rilb a.container h3, .body .center .content .rolb a.container h3, .container-setup p.link, .body .center .content .lolb a.container p.link, .body .center .content .lilb a.container p.link, .body .center .content .rilb a.container p.link, .body .center .content .rolb a.container p.link {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.opaque, .container-setup:hover, .body .center .content .left a.container:hover, .body .center .content .middle a.container:hover, .body .center .content .right a.container:hover {
+.opaque, .container-setup:hover, .body .center .content .lolb a.container:hover, .body .center .content .lilb a.container:hover, .body .center .content .rilb a.container:hover, .body .center .content .rolb a.container:hover {
   opacity: 0.75;
   filter: alpha(opacity=75);
 }
@@ -203,7 +203,7 @@ b {
   font-weight: bold;
 }
 
-.font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.font-helvetica, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -219,7 +219,7 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
+.font-trebuchet, .font-base, .container-setup h3, .body .center .content .lolb a.container h3, .body .center .content .lilb a.container h3, .body .center .content .rilb a.container h3, .body .center .content .rolb a.container h3, .container-setup p.link, .body .center .content .lolb a.container p.link, .body .center .content .lilb a.container p.link, .body .center .content .rilb a.container p.link, .body .center .content .rolb a.container p.link {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -303,7 +303,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-top-right-radius: 6px;
 }
 
-.corner-right {
+.corner-right, .container-setup p.link, .body .center .content .lolb a.container p.link, .body .center .content .lilb a.container p.link, .body .center .content .rilb a.container p.link, .body .center .content .rolb a.container p.link {
   -moz-border-radius-topright: 6px;
   -khtml-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
@@ -336,7 +336,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
+.corner-all, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -363,29 +363,33 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 0 auto;
   padding: 0;
 }
-.body .center .content .left a.container {
+.body .center .content .lolb a.container {
   margin: 0px 29px 0 0;
-  background: url(/images/home_left.jpg) top right no-repeat;
+  background: url(/images/home_lolb.jpg) right no-repeat;
 }
-.body .center .content .middle a.container {
+.body .center .content .lilb a.container {
   margin: 0px 29px 0 0;
-  background: transparent url(/images/home_center.jpg) no-repeat;
+  background: transparent url(/images/home_lilb.jpg) no-repeat;
 }
-.body .center .content .right a.container {
+.body .center .content .rilb a.container {
+  margin: 0px 29px 0 0;
+  background: transparent url(/images/home_rilb.jpg) no-repeat;
+}
+.body .center .content .rolb a.container {
   margin: 0;
-  background: transparent url(/images/home_right.jpg) no-repeat;
+  background: transparent url(/images/home_rolb.jpg) no-repeat;
 }
 
-.container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container {
   position: relative;
   display: inline;
   float: left;
-  width: 280px;
+  width: 202.5px;
   height: 200px;
   border: 1px solid #dad7cb;
   z-index: 20;
 }
-.container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
+.container-setup h1, .body .center .content .lolb a.container h1, .body .center .content .lilb a.container h1, .body .center .content .rilb a.container h1, .body .center .content .rolb a.container h1 {
   font-family: "EmbedFont-1";
   position: absolute;
   top: 18px;
@@ -395,7 +399,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   font-size: 24px;
   font-weight: 100;
 }
-.container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3 {
+.container-setup h3, .body .center .content .lolb a.container h3, .body .center .content .lilb a.container h3, .body .center .content .rilb a.container h3, .body .center .content .rolb a.container h3 {
   position: absolute;
   top: 65px;
   left: 18px;
@@ -405,17 +409,19 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   font-weight: 200;
   line-height: 1.3em;
 }
-.container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
+.container-setup p.link, .body .center .content .lolb a.container p.link, .body .center .content .lilb a.container p.link, .body .center .content .rilb a.container p.link, .body .center .content .rolb a.container p.link {
   position: absolute;
   bottom: 15px;
-  left: 22.5px;
+  left: 0;
+  padding: 3px 1em 3px 30px;
   display: inline;
-  color: #680000;
+  color: white;
+  background: #ad1b1a;
   font-size: 11px;
   font-weight: 200;
   text-decoration: none;
 }
-.container-setup:hover, .body .center .content .left a.container:hover, .body .center .content .middle a.container:hover, .body .center .content .right a.container:hover {
+.container-setup:hover, .body .center .content .lolb a.container:hover, .body .center .content .lilb a.container:hover, .body .center .content .rilb a.container:hover, .body .center .content .rolb a.container:hover {
   text-decoration: none;
 }
 

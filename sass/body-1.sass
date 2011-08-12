@@ -23,21 +23,26 @@
 			width: $inside-width
 			margin: 0 auto
 			padding: 0
-			.left
+			.lolb
 				a.container
 					@extend .container-setup
 					margin: 0px ($h-gap - 1) 0 0
-					background: url(/images/home_left.jpg) top right no-repeat
-			.middle
+					background: url(/images/home_lolb.jpg) right no-repeat
+			.lilb
 				a.container
 					@extend .container-setup
 					margin: 0px ($h-gap - 1) 0 0
-					background: transparent url(/images/home_center.jpg) no-repeat
-			.right
+					background: transparent url(/images/home_lilb.jpg) no-repeat
+			.rilb
+				a.container
+					@extend .container-setup
+					margin: 0px ($h-gap - 1) 0 0
+					background: transparent url(/images/home_rilb.jpg) no-repeat
+			.rolb
 				a.container
 					@extend .container-setup
 					margin: 0
-					background: transparent url(/images/home_right.jpg) no-repeat
+					background: transparent url(/images/home_rolb.jpg) no-repeat
 
 
 .container-setup
@@ -47,7 +52,7 @@
 	@extend .clearfix
 	position: relative
 	+float-left
-	width: (($inside-width - ($h-gap * 2)) / 3)
+	width: (($inside-width - ($h-gap * 3)) / 4)
 	height: $option-height
 	//background: $option-bg
 	border: 1px solid $option-border
@@ -75,13 +80,15 @@
 		line-height: 1.3em
 	p.link
 		@extend .box
-		@extend .corner-all
+		@extend .corner-right
 		@extend .font-base
 		position: absolute
 		bottom: ($v-gap * 0.5)
-		left: ($h-gap * 0.75)
+		left: 0
+		padding: 3px 1em 3px ($h-gap)
 		display: inline
-		color: $option-link
+		color: #fff
+		background: $primary-dark
 		font-size: 11px
 		font-weight: 200
 		text-decoration: none

@@ -1,0 +1,63 @@
+- @title = " | Services"
+- @subtitle = " | Alarm Installation"
+- @body_class = "three"
+
+- @sub0 = ["Alarm Installation", "/electronic"]
+- @sub1 = ["sss", "sss"]
+- @sub2 = ["sss", "sss"]
+
+%link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+
+
+#three.banner
+  .center
+    .content
+      %img.banner{:alt => "", :src => "/images/banner-3-3.jpg"}
+
+
+
+.body
+  .center
+    .content
+      #three.sidebar
+        / .subnav
+        /   %h1=@sub0[0]
+        /   .link
+        /     %h5 
+        /     %p
+        /       %a{:href => "#"+@sub1[1]}
+        /         =@sub1[0]
+        /   .link
+        /     %h5 
+        /     %p
+        /       %a{:href => "#"+@sub2[1]}
+        /         =@sub2[0]
+        .text
+          %h1 Contact Us
+          %p
+            %img.flag{:src => "/images/flag_usa.jpg", :alt => "United States Flag"}
+            %b In the US
+            %br
+            TEL: + 1 (713) 778 0790
+            %br
+            HOTLINE: + 1 (713) 213 4601
+            %br
+            MOBILE: +1 (713) 213 4601
+            %br
+            FAX: + 1 (832) 705 3435
+            %br
+            EMAIL:
+            %a{:href => "mailto:office.us@ifs2i.com"} office.us@ifs2i.com
+          %p
+            7322 Southwest Freeway
+            %br
+            Tower Arena One Suite 1970
+            %br
+            Houston TX, 77074 - USA
+
+      #three.main
+        .content
+          %a{:name => @sub0[1]}
+          .section.no-image
+            %h1=@sub0[0]
+            %p Your text will appear here.
