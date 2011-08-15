@@ -374,6 +374,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   font-size: 30px;
   font-weight: 100;
   text-align: left;
+  text-shadow: 2px 2px 1px black;
   line-height: 1em;
   word-spacing: 0.1em;
   letter-spacing: 0.05em;

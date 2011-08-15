@@ -241,10 +241,10 @@
 				@extend .font-trebuchet
 				@extend .box
 				width: ($content-width)
-				margin: $corner-radius 0 ($corner-radius * -1) 0
+				margin: $corner-radius 0
 				padding: 0 0 0 $corner-radius
 				color: $section-title
-				font-size: 12px
+				font-size: 15px
 				font-weight: bold
 				text-align: justify
 				text-transform: uppercase
@@ -313,6 +313,12 @@
 		width: $content-width !important
 		margin-left: 0 !important
 		
+.youtube   // In regular content
+	@extend .font-base
+	@extend .box
+	width: $content-width
+	margin: 0 auto ($v-gap / 2) $corner-radius
+	padding: 0
 		
 .youtube-sm   // In sidebar
 	@extend .font-base
@@ -320,5 +326,3 @@
 	width: ($option-width - ($h-gap *2))
 	margin: 0 auto ($v-gap / 2)
 	padding: 0
-
-

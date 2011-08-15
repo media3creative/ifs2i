@@ -3,8 +3,9 @@
 - @body_class = "three"
 
 - @sub0 = ["Guard Services", "/guard"]
-- @sub1 = ["sss", "sss"]
-- @sub2 = ["sss", "sss"]
+- @sub1 = ["Bodyguard Services", "bodyguard"]
+- @sub2 = ["Security Guards", "guard"]
+- @sub3 = ["Our Philosophy", "philosophy"]
 
 %link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
 
@@ -20,18 +21,23 @@
   .center
     .content
       #three.sidebar
-        / .subnav
-        /   %h1=@sub0[0]
-        /   .link
-        /     %h5 
-        /     %p
-        /       %a{:href => "#"+@sub1[1]}
-        /         =@sub1[0]
-        /   .link
-        /     %h5 
-        /     %p
-        /       %a{:href => "#"+@sub2[1]}
-        /         =@sub2[0]
+        .subnav
+          %h1=@sub0[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub1[1]}
+                =@sub1[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub2[1]}
+                =@sub2[0]
+          .link
+            %h5 
+            %p
+              %a{:href => "#"+@sub3[1]}
+                =@sub3[0]
         .text
           %h1 Contact Us
           %p
@@ -51,13 +57,41 @@
           %p
             7322 Southwest Freeway
             %br
-            Tower Arena One Suite 1970
+            Arena Tower One, Suite 1970
             %br
             Houston TX, 77074 - USA
 
       #three.main
         .content
-          %a{:name => @sub0[1]}
+          %a{:name => @sub1[1]}
           .section.no-image
-            %h1=@sub0[0]
-            %p Your text will appear here.
+            %h1=@sub1[0]
+            %p IFS2I Security Consulting has been providing the most professional bodyguard services worldwide. We are uniquely qualified to provide you with a security solution customized to meet your specific needs. Our outstanding training department offers multiple close protection and bodyguard trainings as well as other security-oriented courses. This allows us to guarantee a highest possible quality of personnel and provide our clients with the greatest level of security, protection and professionalism. 
+            %p Our services suit for individuals, families, corporate executives or celebrities who requires flexible, discreet and reassuring executive protection service that will give them piece of mind.
+
+          .spacer
+          %a{:name => @sub2[1]}
+          .section.no-image
+            %h1=@sub2[0]
+            %p ISF2I Security Consulting offers guarding services to industrial sites, corporate headquarters, sensitive sites (such as test labs, research facilities, chemical and medical related sites), ports and maritime platforms, public and political performances, private residences, banks, hotels, prestigious sites (luxury shops, jewelry events), sporting events, etc.
+            %h4 Human Surveillance
+            %p
+              &mdash; Surveillance and guarding
+              %br
+              &mdash; Implementation of agent or dog team
+              %br
+              &mdash; Access Control
+              %br
+              &mdash; CCTV
+              %br
+              &mdash; Quality control and inspection
+              %br
+              &mdash; Vulnerability testing and physical intrusion
+            %h4 Transfers of Value
+            %p IFS2I Security Consulting will securely transfer your valuables through highly qualified security officers. Special arrangements can be made like transfers in unmarked vehicles, location based security, etc. 
+
+          .spacer
+          %a{:name => @sub3[1]}
+          .section.no-image
+            %h1=@sub3[0]
+            %p Our philosophy is to provide every client with exceptional service. We are fully licensed and insured to offer security in guard services in a state of Texas. Our armed and unarmed security guards are professional, dependable and diligent in their duties.  We hire only the best and we guarantee our client's complete satisfaction. A specific training of out security officers develops not only expertise in human supervision but also those skills that guarantee quality of care and service.  

@@ -8,14 +8,14 @@
 - @link5 = ["Contact", "/contact"]
 
 // FOOTER LINKS
-- @linkA1 = ["(713) 7778 0790", "ssss"]
+- @linkA1 = ["Available 24/7 - (713) 778 0790", "ssss"]
 - @linkA2 = ["office.us@ifs2i.com", "mailto:office.us@ifs2i.com"]
 - @linkA3 = ["link name", "/path"]
 - @linkA4 = ["link name", "/path"]
 - @linkA5 = ["link name", "/path"]
 
 - @linkB1 = ["Facebook", "http://www.facebook.com/pages/Ifs2i-Security-Consulting/171593209578690"]
-- @linkB2 = ["Twitter", "http://www.twitter.com/name"]
+- @linkB2 = ["Twitter", "http://www.twitter.com/#!/@ifs2isecurity"]
 - @linkB3 = ["LinkedIn", "http://www.linkedin.com/name"]
 - @linkB4 = ["YouTube", "http://www.youtube.com/user/IFSII"]
 - @linkB5 = ["link name", "/path"]
@@ -185,7 +185,7 @@
             %a#two.topnav{:href => @link2[1]}
               =@link2[0]
           %li
-            %a#three.topnav{:href => "#"}
+            %a#three.topnav{:href => @link3[1]}
               =@link3[0]
             .sub
               %ul
@@ -225,9 +225,9 @@
                 %a{:href => @linkB1[1], :target => "_blank"} 
                   %img.icon{:src => "/images/facebook-color.png"}
                   =@linkB1[0]              
-                / %a{:href => @linkB2[1], :target => "_blank"} 
-                /   %img.icon{:src => "/images/twitter-color.png"}
-                /   =@linkB2[0]
+                %a{:href => @linkB2[1], :target => "_blank"} 
+                  %img.icon{:src => "/images/twitter-color.png"}
+                  =@linkB2[0]
                 / %a{:href => @linkB3[1], :target => "_blank"} 
                 /   %img.icon{:src => "/images/linkedin-color.png"}
                 /   =@linkB3[0]
