@@ -167,9 +167,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: white;
-  border-left: 1px solid #dad7cb;
-  border-right: 1px solid #dad7cb;
+  background: #3a3735;
 }
 
 .box, .center-container, .body .center, .body, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container, .container-setup h1, .body .center .content .lolb a.container h1, .body .center .content .lilb a.container h1, .body .center .content .rilb a.container h1, .body .center .content .rolb a.container h1, .container-setup h3, .body .center .content .lolb a.container h3, .body .center .content .lilb a.container h3, .body .center .content .rilb a.container h3, .body .center .content .rolb a.container h3, .container-setup p.link, .body .center .content .lolb a.container p.link, .body .center .content .lilb a.container p.link, .body .center .content .rilb a.container p.link, .body .center .content .rolb a.container p.link {
@@ -199,7 +197,7 @@ p {
 }
 
 b {
-  color: black !important;
+  color: #dddddd !important;
   font-weight: bold;
 }
 
@@ -386,7 +384,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   float: left;
   width: 202.5px;
   height: 200px;
-  border: 1px solid #dad7cb;
+  border: 1px solid #222222;
   z-index: 20;
 }
 .container-setup h1, .body .center .content .lolb a.container h1, .body .center .content .lilb a.container h1, .body .center .content .rilb a.container h1, .body .center .content .rolb a.container h1 {

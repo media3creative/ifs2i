@@ -408,9 +408,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: white;
-  border-left: 1px solid #dad7cb;
-  border-right: 1px solid #dad7cb;
+  background: #3a3735;
 }
 
 .box, .center-container, .content {
@@ -440,7 +438,7 @@ p {
 }
 
 b {
-  color: black !important;
+  color: #dddddd !important;
   font-weight: bold;
 }
 
@@ -1430,7 +1428,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 html {
   margin: 0;
   padding: 0;
-  background: url(/images/stripe_header.png) repeat;
+  background: black;
 }
 
 body {

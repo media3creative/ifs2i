@@ -167,9 +167,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: white;
-  border-left: 1px solid #dad7cb;
-  border-right: 1px solid #dad7cb;
+  background: #3a3735;
 }
 
 .box, .center-container, .center, #header, .center #logo1, ul#topnav a.topnav, ul#topnav .sub ul li a {
@@ -199,7 +197,7 @@ p {
 }
 
 b {
-  color: black !important;
+  color: #dddddd !important;
   font-weight: bold;
 }
 
@@ -364,7 +362,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .center #logo1 {
   position: absolute;
-  top: 15px;
+  top: 10px;
   left: 35px;
   margin: 0;
 }
@@ -374,8 +372,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding: 0;
 }
 .center #logo1 a img {
-  width: 155px;
-  height: 50px;
+  width: 195px;
+  height: 60px;
   margin: 0;
   padding: 0;
   border: 0;
@@ -385,7 +383,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 ul#topnav {
   display: inline;
   float: right;
-  margin: 20px 30px 0 190px;
+  margin: 20px 30px 0 230px;
   padding: 0;
   color: #dad7cb;
   letter-spacing: 0.05em;
@@ -411,7 +409,7 @@ ul#topnav a.topnav {
   margin: 6px -1px 0 0;
   padding: 0.4em 1.3em 0.5em 1.3em;
   color: #dad7cb;
-  font-size: 13px;
+  font-size: 14px;
   text-align: center;
 }
 

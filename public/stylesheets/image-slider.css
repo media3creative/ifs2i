@@ -167,9 +167,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: white;
-  border-left: 1px solid #dad7cb;
-  border-right: 1px solid #dad7cb;
+  background: #3a3735;
 }
 
 .box, .center-container, .image-slider .center, .image-slider, .image-slider .center .captionContainer, .image-slider .center .captionContainer h1, .image-slider .center .captionContainer h3, .image-slider .center .captionContainer p.link, .nivoSlider, .nivoSlider img, #slider-wrapper, #slider {
@@ -199,7 +197,7 @@ p {
 }
 
 b {
-  color: black !important;
+  color: #dddddd !important;
   font-weight: bold;
 }
 
@@ -517,7 +515,7 @@ a.nivo-nextNav {
   height: 300px;
   margin: 0 auto;
   overflow: hidden;
-  border: 1px solid #dddddd;
+  border: 1px solid #111111;
   background: #efefef;
 }
 

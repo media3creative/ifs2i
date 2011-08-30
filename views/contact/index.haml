@@ -38,12 +38,11 @@
         /     %p
         /       %a{:href => "#"+@sub3[1]}
         /         =@sub3[0]
-        .text
+        .img
+          %a{:href => "http://maps.google.com/maps?q=IFS2I+Arena+Tower+One+Houston+TX,+77074&hl=en&ll=29.70248,-95.516982&spn=0.045328,0.049567&sll=29.700159,-95.516038&sspn=0.011332,0.012392&vpsrc=6&z=15", :target => "_blank"}
+            %img{:src => "/images/map.jpg", :alt => "IFS2I on Google Maps"}
           %h1 Contact Us
           %p
-            %img.flag{:src => "/images/flag_usa.jpg", :alt => "United States Flag"}
-            %b In the US
-            %br
             TEL: + 1 (713) 778 0790
             %br
             HOTLINE: + 1 (713) 213 4601
@@ -53,7 +52,7 @@
             FAX: + 1 (832) 705 3435
             %br
             EMAIL:
-            %a{:href => "mailto:office.us@ifs2i.com"} office.us@ifs2i.com
+            %a{:href => "mailto:contact@ifs2i.com"} contact@ifs2i.com
           %p
             7322 Southwest Freeway
             %br
@@ -68,4 +67,4 @@
           .section.no-image
             %h1 Contact Us
             %p.contact-form
-              %iframe.contact{:allowtransparency => "true", :frameborder => "0", :height => "900", :scrolling => "no", :src => "http://media3creative.wufoo.com/embed/r7p3m3/", :width => "100%", :border => "none"}       
+              %iframe.contact{:allowtransparency => "true", :frameborder => "0", :height => "640", :scrolling => "no", :src => "http://media3creative.wufoo.com/embed/r7p3m3/", :width => "100%", :border => "none"}       

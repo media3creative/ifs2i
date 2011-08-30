@@ -30,7 +30,7 @@
 				height: $banner-height
 				margin: 0
 				padding: 0
-				border: 1px solid $line-color
+				border: 1px solid #222
 				
 
 
@@ -194,6 +194,18 @@
 		width: ($option-width - ($h-gap * 2))
 		margin: 0 ($h-gap)
 
+.img
+	@extend .text
+	overflow: hidden
+	img
+		@extend .box
+		@extend .corner-top
+		width: $sidebar-width
+		height: 200px
+		margin: 0 auto
+		padding: 0
+		border-bottom: 6px solid #000
+
 .main
 	@extend .section
 	@extend .box
@@ -229,14 +241,14 @@
 				@extend .box
 				width: ($content-width - ($content-img-w + ($h-gap / 2)))
 				margin: $corner-radius 0 ($v-gap/3) ($content-img-w + ($h-gap / 2))
-				padding: 0 3em 0.5em $corner-radius
+				padding: 0 3em 0em $corner-radius
 				color: $section-title !important
 				font-size: 24px
 				font-weight: 100
 				text-transform: capitalize
 				word-spacing: -0.1em
 				letter-spacing: -0.07em
-				border-bottom: 1px solid $section-lines
+				border-left: $corner-radius solid #222				
 			h4
 				@extend .font-trebuchet
 				@extend .box
@@ -254,7 +266,7 @@
 				@extend .box
 				width: ($content-width)
 				margin: $corner-radius 0 ($v-gap/3) 0
-				padding: 0 0 0 $corner-radius
+				padding: 0 0 0 0
 				color: $section-text
 				font-size: 12px
 				font-weight: 200
