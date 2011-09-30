@@ -2,9 +2,10 @@
 - @subtitle = ""
 - @body_class = "three"
 
-- @sub0 = ["Security Consulting", "/security"]
-- @sub1 = ["sss", "sss"]
-- @sub2 = ["sss", "sss"]
+- @sub0 = ["Services", "/services"]
+- @sub1 = ["Security Consulting", "/security"]
+- @sub2 = ["Guard / Bodyguard", "/guard"]
+- @sub3 = ["Electronic Security", "/electronic"]
 
 %link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
 
@@ -19,79 +20,69 @@
 .body
   .center
     .content
-      #three.sidebar
-        / .subnav
-        /   %h1=@sub0[0]
-        /   .link
-        /     %h5 
-        /     %p
-        /       %a{:href => "#"+@sub1[1]}
-        /         =@sub1[0]
-        /   .link
-        /     %h5 
-        /     %p
-        /       %a{:href => "#"+@sub2[1]}
-        /         =@sub2[0]
-        .text
-          %h1 Contact Us
-          %p
-            TEL: + 1 (713) 778 0790
-            %br
-            HOTLINE: + 1 (713) 213 4601
-            %br
-            MOBILE: +1 (713) 213 4601
-            %br
-            FAX: + 1 (832) 705 3435
-            %br
-            EMAIL:
-            %a{:href => "mailto:contact@ifs2i.com"} contact@ifs2i.com
-          %p
-            7322 Southwest Freeway
-            %br
-            Arena Tower One, Suite 1970
-            %br
-            Houston TX, 77074 - USA
+      #three.sidebar.right
+        .subnav
+          %h1= "Our "+@sub0[0]
+          .link
+            %h5 
+            %p
+              %a{:href => @sub1[1]}
+                =@sub1[0]
+          .link
+            %h5 
+            %p
+              %a{:href => @sub2[1]}
+                =@sub2[0]
+          .link
+            %h5 
+            %p
+              %a{:href => @sub3[1]}
+                =@sub3[0]
 
       #three.main
         .content
           %a{:name => @sub0[1]}
           .section.no-image
             %h1=@sub0[0]
+            %p 
+              %b The IFS2I Security Consulting Difference
             %p
-              %b What makes us different?
+              As a U.S. security consulting firm backed by an international leader in security services, we have the expertise and resources to provide innovative solutions and comprehensive security services around the world including:
               %br
-              Our difference is the ability to provide our client with a whole range of security services. 
+              &mdash;	Security Consulting 
               %br
-              We offer: 
+              &mdash;	System Maintenance 
               %br
-              &mdash;	Security Consulting
+              &mdash;	Security Audits 
               %br
-              &mdash;	System Maintenance
+              &mdash;	Risk Analysis 
               %br
-              &mdash;	Security Audits
+              &mdash;	Security Assistance 
               %br
-              &mdash;	Risk Analysis
+              &mdash;	Escort 
               %br
-              &mdash;	Security Assistance
+              &mdash;	Bodyguards 
               %br
-              &mdash;	Escort
+              &mdash;	Guard Services 
               %br
-              &mdash;	Bodyguards
+              &mdash;	Security Training
               %br
-              &mdash;	Guard Services
+              &mdash;	Electronic security systems
+              %br
+              &mdash;	Surveillance 
 
-            %p We can advice you on alarm installation as well as video monitoring, provide you with professional guard for your industrial platform or help you with a security driver. In a face of our company you will find a solution to all your security related needs for guaranteed full peace of mind. We will become you only partner in a field of security. 
-            %p Our international experience helps us bring innovative solutions to the industry.
+            %p Whether you need expert advice about a home or business alarm installation, video monitoring, a professional guard for your industrial complex, a security driver, a bodyguard, or security training, IFS2I creates custom security solutions and delivers the ultimate in protection and peace of mind. 
 
-
-            %p Today IFS2I orients its activity on the development of creating outstanding security experience to answer all of our clients' needs all over the globe. We work with individual clients as well as with companies and we customize each project to achieve the best possible result. 
-
+            %p Serving as a security partner, we work with individuals and companies alike. All solutions are carefully crafted to the unique needs of each client for the best possible outcome. We are focused on serving the needs of our clients around the globe and creating an outstanding security experience.
 
             %p
-              %b Our Work:
-              %br
-              As of today we have supervised and trained over 2000 security agents, consultants and instructors as well as managing security and training functions. We protected and supported our clients&mdash;individuals, companies and institutions&mdash;with a comprehensive range of solutions in the area of safety and security. We work with people, goods, activities, information and much more. IFS2I provides competitive intelligence and technical assistance in risk area
+              %b Our Work
+            %p We're proud of our track record. Thus far, we have supervised and trained over 2000 security agents, consultants, and instructors. We have managed security and training functions for companies of all sizes around the world. We have protected and supported individuals, companies, and institutions with a comprehensive range of safety and security solutions. We have protected people, facilities, goods, activities, information, and much more. We have also provided competitive intelligence, technical assistance, risk management, security assessments, and more. 
 
-            %p We help our clients to understand their needs and problems&mdash;political, security, terrorism&mdash;to develop the best possible solution against economic crimes, fraud, counterfeiting and other sensitive areas. We will help you to achieve the best outcome of your business.
+            %p Central to our work is our ability to help our clients understand their needs, vulnerabilities, and the threats and risks they face including political, terrorism, and security concerns. With this deep understanding, we then develop the best possible solution against economic crimes, fraud, counterfeiting, security breaches, and other sensitive areas. 
 
-            %p IFS2I offers training, risks watch, security advise, guidance, operational maintenance, deployment and maintenance of operational systems, logistic and crisis management.
+            %p
+              Do you need help with security training, risks watch, security advice, guidance, operational maintenance, deployment and maintenance of operational systems, or logistic and crisis management? We offer all of the above&mdash;and more&mdash;and are committed to helping you achieve the best possible outcome.
+              %a{:href => "/contat"}Contact us
+              today.
+            

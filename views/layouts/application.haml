@@ -26,6 +26,24 @@
 - @linkC4 = ["link name", "/path"]
 - @linkC5 = ["link name", "/path"]
 
+- @linkA1 = @link2
+- @linkA2 = @link3
+- @linkA3 = @link4
+- @linkA4 = ["link name", "/path"]
+- @linkA5 = ["link name", "/path"]
+
+- @linkB1 = ["Security Consulting", "/security"]
+- @linkB2 = ["Guard / Bodyguard", "/guard"]
+- @linkB3 = ["Electronic Security", "/electronic"]
+- @linkB4 = ["link name", "/path"]
+- @linkB5 = ["link name", "/path"]
+
+- @linkC1 = @link5
+- @linkC2 = ["Facebook", "http://www.facebook.com/pages/Ifs2i-Security-Consulting/171593209578690"]
+- @linkC3 = ["Twitter", "http://www.twitter.com/#!/@ifs2isecurity"]
+- @linkC4 = ["YouTube", "http://www.youtube.com/user/IFSII"]
+- @linkC5 = ["link name", "/path"]
+
 !!! 5
 %html
   %head
@@ -179,7 +197,7 @@
             %img{:src => "/images/logo2.png", :alt => ""+@sitename+" Logo"}
         %ul#topnav
           %li
-            %a#one.topnav{:href => @link1[1]}
+            %a#one.topnav.first{:href => @link1[1]}
               =@link1[0]
           %li
             %a#two.topnav{:href => @link2[1]}
@@ -201,39 +219,70 @@
             %a#four.topnav{:href => @link4[1]}
               =@link4[0]
           %li
-            %a#five.topnav{:href => @link5[1]}
+            %a#five.topnav.last{:href => @link5[1]}
               =@link5[0]
 
 
     .content
       = yield
-      #footer
-        .center
-          .content
-            &nbsp;
-            .row
-              %p.logo-sm
-                %img{:src => "/images/logo-sm2.png", :alt => "IFS2I Logo"}
-            .row
-              %p
-                =@linkA1[0]
-                =" - "
-                %a{:href => @linkA2[1]}
-                  =@linkA2[0]
-            .row
-              %p
-                %a{:href => @linkB1[1], :target => "_blank"} 
-                  %img.icon{:src => "/images/facebook-color.png"}
-                  =@linkB1[0]              
-                %a{:href => @linkB2[1], :target => "_blank"} 
-                  %img.icon{:src => "/images/twitter-color.png"}
-                  =@linkB2[0]
-                / %a{:href => @linkB3[1], :target => "_blank"} 
-                /   %img.icon{:src => "/images/linkedin-color.png"}
-                /   =@linkB3[0]
-                %a{:href => @linkB4[1], :target => "_blank"} 
-                  %img.icon{:src => "/images/youtube.jpeg"}
-                  =@linkB4[0]
+      / #footer
+      /   .center
+      /     .content
+      /       &nbsp;
+      /       .row
+      /         %p.logo-sm
+      /           %img{:src => "/images/logo-sm2.png", :alt => "IFS2I Logo"}
+      /       .row
+      /         %p
+      /           =@linkA1[0]
+      /           =" - "
+      /           %a{:href => @linkA2[1]}
+      /             =@linkA2[0]
+      /       .row
+      /         %p
+      /           %a{:href => @linkB1[1], :target => "_blank"} 
+      /             %img.icon{:src => "/images/facebook-color.png"}
+      /             =@linkB1[0]              
+      /           %a{:href => @linkB2[1], :target => "_blank"} 
+      /             %img.icon{:src => "/images/twitter-color.png"}
+      /             =@linkB2[0]
+      /           / %a{:href => @linkB3[1], :target => "_blank"} 
+      /           /   %img.icon{:src => "/images/linkedin-color.png"}
+      /           /   =@linkB3[0]
+      /           %a{:href => @linkB4[1], :target => "_blank"} 
+      /             %img.icon{:src => "/images/youtube.jpeg"}
+      /             =@linkB4[0]
+
+    #footer
+      .center
+        .content
+          &nbsp;
+          .column
+            %h4 Resources
+            %a{:href => @linkA1[1]}
+              =@linkA1[0]
+            %a{:href => @linkA2[1]}
+              =@linkA2[0]
+            %a{:href => @linkA3[1]}
+              =@linkA3[0]
+          .column
+            %h4 Services
+            %a{:href => @linkB1[1]}
+              =@linkB1[0]
+            %a{:href => @linkB2[1]}
+              =@linkB2[0]
+            %a{:href => @linkB3[1]}
+              =@linkB3[0]
+          .column
+            %h4 Connect
+            %a{:href => @linkC1[1]}
+              =@linkC1[0]
+            %a{:href => @linkC2[1], :target => "_blank"}
+              =@linkC2[0]
+            %a{:href => @linkC3[1], :target => "_blank"}
+              =@linkC3[0]
+            %a{:href => @linkC4[1], :target => "_blank"}
+              =@linkC4[0]  
               
                   
     .m3c-bar

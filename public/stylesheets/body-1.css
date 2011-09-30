@@ -1,5 +1,6 @@
 .font-helvetica, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.025em;
 }
 
 .font-arial {
@@ -14,15 +15,23 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .container-setup h3, .body .center .content .lolb a.container h3, .body .center .content .lilb a.container h3, .body .center .content .rilb a.container h3, .body .center .content .rolb a.container h3, .container-setup p.link, .body .center .content .lolb a.container p.link, .body .center .content .lilb a.container p.link, .body .center .content .rilb a.container p.link, .body .center .content .rolb a.container p.link {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
+}
+
+.font-myriad {
+  font-family: "Myriad Pro", "Myriad", "Trebuchet", Verdana, Arial, sans-serif;
+}
+
+.font-cambria, .font-base, .body .center .content .textbox p, .container-setup h1, .body .center .content .lolb a.container h1, .body .center .content .lilb a.container h1, .body .center .content .rilb a.container h1, .body .center .content .rolb a.container h1, .container-setup h3, .body .center .content .lolb a.container h3, .body .center .content .lilb a.container h3, .body .center .content .rilb a.container h3, .body .center .content .rolb a.container h3, .container-setup p.link, .body .center .content .lolb a.container p.link, .body .center .content .lilb a.container p.link, .body .center .content .rilb a.container p.link, .body .center .content .rolb a.container p.link {
+  font-family: "Cambria", "Georgia", "Garamond", times, serif;
 }
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#dc2e2c), to(#680000));
+  background: -webkit-gradient(linear, left top, left bottom, from(#e60000), to(#990000));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #dc2e2c, #680000);
+  background: -moz-linear-gradient(top, #e60000, #990000);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -31,9 +40,9 @@
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#680000), to(#dc2e2c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#e60000));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #680000, #dc2e2c);
+  background: -moz-linear-gradient(top, #990000, #e60000);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -42,21 +51,23 @@
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#dad7cb), to(#efecde));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7aa5d), to(#f4912d));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #dad7cb, #efecde);
+  background: -moz-linear-gradient(top, #f7aa5d, #f4912d);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-dark, endColorstr=$secondary);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-dark, endColorstr=$secondary);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #dad7cb;
+  background: #858585;
+  color: black;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #dad7cb;
+  background: #858585;
+  color: black;
 }
 
 .corner-top-left {
@@ -131,7 +142,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container {
+.corner-all, .body .center .content .textbox, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -144,16 +155,16 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.clearfix, .body, .body .center, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container {
+.clearfix, .body, .body .center, .body .center .content .textbox, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container {
   zoom: 1;
 }
-.clearfix:before, .body:before, .body .center:before, .container-setup:before, .body .center .content .lolb a.container:before, .body .center .content .lilb a.container:before, .body .center .content .rilb a.container:before, .body .center .content .rolb a.container:before {
+.clearfix:before, .body:before, .body .center:before, .body .center .content .textbox:before, .container-setup:before, .body .center .content .lolb a.container:before, .body .center .content .lilb a.container:before, .body .center .content .rilb a.container:before, .body .center .content .rolb a.container:before {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.clearfix:after, .body:after, .body .center:after, .container-setup:after, .body .center .content .lolb a.container:after, .body .center .content .lilb a.container:after, .body .center .content .rilb a.container:after, .body .center .content .rolb a.container:after {
+.clearfix:after, .body:after, .body .center:after, .body .center .content .textbox:after, .container-setup:after, .body .center .content .lolb a.container:after, .body .center .content .lilb a.container:after, .body .center .content .rilb a.container:after, .body .center .content .rolb a.container:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -167,10 +178,10 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: #3a3735;
+  background: #3a3a3a;
 }
 
-.box, .center-container, .body .center, .body, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container, .container-setup h1, .body .center .content .lolb a.container h1, .body .center .content .lilb a.container h1, .body .center .content .rilb a.container h1, .body .center .content .rolb a.container h1, .container-setup h3, .body .center .content .lolb a.container h3, .body .center .content .lilb a.container h3, .body .center .content .rilb a.container h3, .body .center .content .rolb a.container h3, .container-setup p.link, .body .center .content .lolb a.container p.link, .body .center .content .lilb a.container p.link, .body .center .content .rilb a.container p.link, .body .center .content .rolb a.container p.link {
+.box, .center-container, .body .center, .body, .body .center .content .textbox, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container, .container-setup h1, .body .center .content .lolb a.container h1, .body .center .content .lilb a.container h1, .body .center .content .rilb a.container h1, .body .center .content .rolb a.container h1, .container-setup h3, .body .center .content .lolb a.container h3, .body .center .content .lilb a.container h3, .body .center .content .rilb a.container h3, .body .center .content .rolb a.container h3, .container-setup p.link, .body .center .content .lolb a.container p.link, .body .center .content .lilb a.container p.link, .body .center .content .rilb a.container p.link, .body .center .content .rolb a.container p.link {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -197,12 +208,16 @@ p {
 }
 
 b {
-  color: #dddddd !important;
-  font-weight: bold;
+  color: #e60000 !important;
+  font-weight: 100;
+  font-size: 110%;
+  text-shadow: 1px 1px 0px black;
+  line-height: 50px;
 }
 
 .font-helvetica, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.025em;
 }
 
 .font-arial {
@@ -217,15 +232,23 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .container-setup h3, .body .center .content .lolb a.container h3, .body .center .content .lilb a.container h3, .body .center .content .rilb a.container h3, .body .center .content .rolb a.container h3, .container-setup p.link, .body .center .content .lolb a.container p.link, .body .center .content .lilb a.container p.link, .body .center .content .rilb a.container p.link, .body .center .content .rolb a.container p.link {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
+}
+
+.font-myriad {
+  font-family: "Myriad Pro", "Myriad", "Trebuchet", Verdana, Arial, sans-serif;
+}
+
+.font-cambria, .font-base, .body .center .content .textbox p, .container-setup h1, .body .center .content .lolb a.container h1, .body .center .content .lilb a.container h1, .body .center .content .rilb a.container h1, .body .center .content .rolb a.container h1, .container-setup h3, .body .center .content .lolb a.container h3, .body .center .content .lilb a.container h3, .body .center .content .rilb a.container h3, .body .center .content .rolb a.container h3, .container-setup p.link, .body .center .content .lolb a.container p.link, .body .center .content .lilb a.container p.link, .body .center .content .rilb a.container p.link, .body .center .content .rolb a.container p.link {
+  font-family: "Cambria", "Georgia", "Garamond", times, serif;
 }
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#dc2e2c), to(#680000));
+  background: -webkit-gradient(linear, left top, left bottom, from(#e60000), to(#990000));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #dc2e2c, #680000);
+  background: -moz-linear-gradient(top, #e60000, #990000);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -234,9 +257,9 @@ b {
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#680000), to(#dc2e2c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#e60000));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #680000, #dc2e2c);
+  background: -moz-linear-gradient(top, #990000, #e60000);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -245,21 +268,23 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#dad7cb), to(#efecde));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7aa5d), to(#f4912d));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #dad7cb, #efecde);
+  background: -moz-linear-gradient(top, #f7aa5d, #f4912d);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-dark, endColorstr=$secondary);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-dark, endColorstr=$secondary);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #dad7cb;
+  background: #858585;
+  color: black;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #dad7cb;
+  background: #858585;
+  color: black;
 }
 
 .corner-top-left {
@@ -334,7 +359,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container {
+.corner-all, .body .center .content .textbox, .container-setup, .body .center .content .lolb a.container, .body .center .content .lilb a.container, .body .center .content .rilb a.container, .body .center .content .rolb a.container {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -361,6 +386,27 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 0 auto;
   padding: 0;
 }
+.body .center .content .textbox {
+  position: relative;
+  width: 900px;
+  margin: 0 0 30px 0;
+  padding: 15px 20.1px;
+  border: 1px solid #444444;
+  background: #222222;
+}
+.body .center .content .textbox p {
+  color: white;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: justify;
+}
+.body .center .content .textbox p a {
+  color: #f4912d;
+  text-decoration: none;
+}
+.body .center .content .textbox p a:hover {
+  color: white;
+}
 .body .center .content .lolb a.container {
   margin: 0px 29px 0 0;
   background: url(/images/home_lolb.jpg) right no-repeat;
@@ -384,16 +430,15 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   float: left;
   width: 202.5px;
   height: 200px;
-  border: 1px solid #222222;
+  border: 1px solid #404040;
   z-index: 20;
 }
 .container-setup h1, .body .center .content .lolb a.container h1, .body .center .content .lilb a.container h1, .body .center .content .rilb a.container h1, .body .center .content .rolb a.container h1 {
-  font-family: "EmbedFont-1";
   position: absolute;
   top: 18px;
   left: 18px;
   margin: 0 22.5px 0 0;
-  color: #ad1b1a;
+  color: #990000;
   font-size: 24px;
   font-weight: 100;
 }
@@ -402,7 +447,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   top: 65px;
   left: 18px;
   margin: 0 76px 12px 0;
-  color: black;
+  color: #666666;
   font-size: 12px;
   font-weight: 200;
   line-height: 1.3em;
@@ -411,11 +456,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   position: absolute;
   bottom: 15px;
   left: 0;
-  padding: 3px 1em 3px 30px;
+  padding: 2px 1em 3px 30px;
   display: inline;
-  color: white;
-  background: #ad1b1a;
-  font-size: 11px;
+  color: #f4912d;
+  background: black;
+  font-size: 13px;
   font-weight: 200;
   text-decoration: none;
 }

@@ -18,11 +18,8 @@
 	border-bottom: 2px solid $header-border
 .center
 	@extend .center-container
+	@extend .bg-gradient-primary
 	@extend .box
-	background: transparent
-	border-left: 1px solid transparent
-	border-right: 1px solid transparent
-
 	#logo1
 		@extend .box
 		position: absolute
@@ -51,6 +48,7 @@ ul#topnav
 	margin: 20px ($v-gap) 0 ($logoW + 5px + $h-gap)
 	padding: 0
 	color: $nav-text
+	font-size: 13px
 	letter-spacing: 0.05em
 	list-style: none
 	z-index: 50
@@ -67,30 +65,32 @@ ul#topnav li a
 
 ul#topnav a.topnav
 	@extend .box
-	@extend .corner-all
 	margin: 6px -1px 0 0
-	padding: 0.4em 1.3em 0.5em 1.3em
-	color: $nav-text
+	padding: .5em 2em .4em 2em
 	font-size: 14px
 	text-align: center
-	//text-transform: uppercase
-	//border-left: 1px solid $nav-lines
-	//border-right: 1px solid $nav-lines
+	text-transform: uppercase
+	border-left: 1px solid $nav-lines
+	border-right: 1px solid $nav-lines
+a.first
+	border-left: 0px !important
+a.last
+	border-right: 0px !important
 
 ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover 
 	color: $nav-text-hover
-	background: $primary
+	//background: url("../images/nav/nav_bg.png") repeat
  
 ul#topnav li .sub 
-	@extend .corner-bottom
-	@extend .corner-top-right
+	@extend .corner-right
 	display: none
 	position: absolute
 	+float-left
-	top: 27px
-	left: 0px
+	top: 32px
+	left: 1px
 	background: $nav-dropdown-bg
 	padding: 5px 0 6px 0
+	border-left: 2px solid $nav-dropdown-accent
 	z-index: 50
 
 ul#topnav li .row 
@@ -105,9 +105,8 @@ ul#topnav li .sub ul
 	padding: 0
 	list-style: none
 
-ul#topnav .sub ul li
-	width: 100%
-	min-width: 140px
+ul#topnav .sub ul li 
+	min-width: 200px
 
 ul#topnav .sub ul li h2 a 
 	margin: 0 0 .5em 0
@@ -123,7 +122,6 @@ ul#topnav .sub ul li a
 	padding: 0.5em 1em
 	color: $nav-dropdown-text
 	background: $nav-dropdown-bg
-	font-size: 12px
 	text-indent: 0
 	text-decoration: none
 
@@ -146,4 +144,4 @@ body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a
 
 .navigation-hover
 	//@extend .bg-gradient-secondary
-	color: #fff !important
+	color: $nav-text-hover

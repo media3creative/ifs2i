@@ -3,8 +3,9 @@
 - @body_class = "three"
 
 - @sub0 = ["Electronic Security", "/electronic"]
-- @sub1 = ["sss", "sss"]
-- @sub2 = ["sss", "sss"]
+- @sub1 = ["Security Consulting", "/security"]
+- @sub2 = ["Guard / Bodyguard", "/guard"]
+- @sub3 = ["Electronic Security", "/electronic"]
 
 %link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
 
@@ -19,44 +20,47 @@
 .body
   .center
     .content
-      #three.sidebar
-        / .subnav
-        /   %h1=@sub0[0]
-        /   .link
-        /     %h5 
-        /     %p
-        /       %a{:href => "#"+@sub1[1]}
-        /         =@sub1[0]
-        /   .link
-        /     %h5 
-        /     %p
-        /       %a{:href => "#"+@sub2[1]}
-        /         =@sub2[0]
-        .text
-          %h1 Contact Us
-          %p
-            TEL: + 1 (713) 778 0790
-            %br
-            HOTLINE: + 1 (713) 213 4601
-            %br
-            MOBILE: +1 (713) 213 4601
-            %br
-            FAX: + 1 (832) 705 3435
-            %br
-            EMAIL:
-            %a{:href => "mailto:contact@ifs2i.com"} contact@ifs2i.com
-          %p
-            7322 Southwest Freeway
-            %br
-            Arena Tower One, Suite 1970
-            %br
-            Houston TX, 77074 - USA
+      #three.sidebar.right
+        .subnav
+          %h1= "Our "+@sub0[0]
+          .link
+            %h5 
+            %p
+              %a{:href => @sub1[1]}
+                =@sub1[0]
+          .link
+            %h5 
+            %p
+              %a{:href => @sub2[1]}
+                =@sub2[0]
+          .link
+            %h5 
+            %p
+              %a{:href => @sub3[1]}
+                =@sub3[0]
 
       #three.main
         .content
           %a{:name => @sub0[1]}
           .section.no-image
             %h1=@sub0[0]
-            %p Recent FBI reports state that burglary takes place approximately every 14 seconds. The best way to protect your family, your home and your business valuables is  a monitored home security system. Statistically, you are three times less likely to experience a burglary when you protect your home or place of business with a monitored security system. Monitored security systems can also save you up to 20% on your homeowners insurance!
-            %p IFS2I Security Consulting is fully licensed and insured to operate in state of Texas. We offer a full range of electronic security services to customize your needs. IFS2I is committed to providing its customers the highest level of technical service and communication. In today's cost saving environment, many people who are taking charge of a facility's electronic security have little or no industry expenses. The experience of IFS2I gives the customer confidence to make an informed decision about design and utilization of the variety of security options. IFS2I also provides exemplary training and support in the use of already installed security equipment. 
+            %p According to the FBI, a burglary takes place approximately every 14 seconds. The best way to protect your family, home, and business is with a monitored security system. Statistically, you are three times less likely to become a burglary victim when you protect your home or business with a monitored security system. In addition to avoiding burglaries, monitored security systems can also save you up to 20% on your insurance policy!
+
+            %p 
+              %b Home Security Systems
+            %p IFS2I Security Consulting offers complete monitored home security solutions for the ultimate in peace of mind. Before recommending a home security system, we meet with you to assess the risks and find out more about your concerns and needs. After we fully understand your individual security needs, we will present you with a monitored home security solution to match. 
+
+            %p  
+              %b Electronic Security Solutions for Businesses
+            %p Whether you run a mom-and-pop shop or a multi-million dollar business, securing your facilities, inventory, and staff is of utmost importance. IFS2I Security Consulting offers comprehensive electronic security solutions for businesses including monitored video surveillance systems, traditional security alarm systems, and more. We also provide exceptional training and support for both new and previously installed security equipment.
+
+            %p  
+              %b Why IFS2I Security Consulting?
+            %p IFS2I Security Consulting is fully licensed and insured to operate in Texas. We offer a full range of electronic security services and systems – all customized to your individual security needs. We are committed to providing you with the highest level of technical service, communication, and professionalism. 
+
+            %p In today's budget-conscious business climate, many employees charged with overseeing a facility's electronic security have little or no security industry experience. IFS2I is an international leader in security. After consulting with our Houston security team, you will have the confidence to make an informed decision about the security options available to you. 
+
+            %p 
+              %a{:href=> "/contact"}Contact us
+              today to find out more about our comprehensive residential and commercial electronic security solutions.
             

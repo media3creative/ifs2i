@@ -23,6 +23,27 @@
 			width: $inside-width
 			margin: 0 auto
 			padding: 0
+			.textbox
+				@extend .box
+				@extend .corner-all
+				@extend .clearfix
+				position: relative
+				width: $inside-width
+				margin: 0 0 $v-gap 0
+				padding: ($v-gap/2) ($h-gap*0.67)
+				border: 1px solid #444
+				background: #222
+				p
+					@extend .font-base
+					color: #fff
+					font-size: 13px
+					line-height: 22px
+					text-align: justify
+					a
+						color: $section-link
+						text-decoration: none
+						&:hover
+							color: $section-link-hover
 			.lolb
 				a.container
 					@extend .container-setup
@@ -59,7 +80,7 @@
 	z-index: 20
 	h1
 		@extend .box
-		font-family: "EmbedFont-1"
+		@extend .font-base
 		position: absolute
 		top: ($v-gap * 0.6)
 		left: ($h-gap * 0.6)
@@ -85,11 +106,11 @@
 		position: absolute
 		bottom: ($v-gap * 0.5)
 		left: 0
-		padding: 3px 1em 3px ($h-gap)
+		padding: 2px 1em 3px ($h-gap)
 		display: inline
-		color: #fff
-		background: $primary-dark
-		font-size: 11px
+		color: $option-link
+		background: #000
+		font-size: 13px
 		font-weight: 200
 		text-decoration: none
 	&:hover

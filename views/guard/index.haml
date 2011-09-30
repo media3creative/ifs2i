@@ -1,11 +1,11 @@
 - @title = " | Services"
-- @subtitle = " | Guard Services"
+- @subtitle = " | Guard / Bodyguard Services"
 - @body_class = "three"
 
-- @sub0 = ["Guard Services", "/guard"]
-- @sub1 = ["Bodyguard Services", "bodyguard"]
-- @sub2 = ["Security Guards", "guard"]
-- @sub3 = ["Our Philosophy", "philosophy"]
+- @sub0 = ["Guard / Bodyguard Services", "/services"]
+- @sub1 = ["Security Consulting", "/security"]
+- @sub2 = ["Guard / Bodyguard", "/guard"]
+- @sub3 = ["Electronic Security", "/electronic"]
 
 %link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
 
@@ -20,75 +20,60 @@
 .body
   .center
     .content
-      #three.sidebar
+      #three.sidebar.right
         .subnav
-          %h1=@sub0[0]
+          %h1= "Our "+@sub0[0]
           .link
             %h5 
             %p
-              %a{:href => "#"+@sub1[1]}
+              %a{:href => @sub1[1]}
                 =@sub1[0]
           .link
             %h5 
             %p
-              %a{:href => "#"+@sub2[1]}
+              %a{:href => @sub2[1]}
                 =@sub2[0]
           .link
             %h5 
             %p
-              %a{:href => "#"+@sub3[1]}
+              %a{:href => @sub3[1]}
                 =@sub3[0]
-        .text
-          %h1 Contact Us
-          %p
-            TEL: + 1 (713) 778 0790
-            %br
-            HOTLINE: + 1 (713) 213 4601
-            %br
-            MOBILE: +1 (713) 213 4601
-            %br
-            FAX: + 1 (832) 705 3435
-            %br
-            EMAIL:
-            %a{:href => "mailto:contact@ifs2i.com"} contact@ifs2i.com
-          %p
-            7322 Southwest Freeway
-            %br
-            Arena Tower One, Suite 1970
-            %br
-            Houston TX, 77074 - USA
 
       #three.main
         .content
-          %a{:name => @sub1[1]}
           .section.no-image
-            %h1=@sub1[0]
-            %p IFS2I Security Consulting has been providing the most professional bodyguard services worldwide. We are uniquely qualified to provide you with a security solution customized to meet your specific needs. Our outstanding training department offers multiple close protection and bodyguard trainings as well as other security-oriented courses. This allows us to guarantee a highest possible quality of personnel and provide our clients with the greatest level of security, protection and professionalism. 
-            %p Our services suit for individuals, families, corporate executives or celebrities who requires flexible, discreet and reassuring executive protection service that will give them piece of mind.
+            %h1=@sub0[0]
+            %p 
+              %b Bodyguard Services
+            %p IFS2I Security Consulting is an internationally renowned provider of the most professional bodyguard services available. Whether you're a celebrity, politician, executive, witness, or otherwise in danger's path, if you need bodyguard services, you can count on us for the highest level of security, protection, and professionalism.
 
-          .spacer
-          %a{:name => @sub2[1]}
-          .section.no-image
-            %h1=@sub2[0]
-            %p ISF2I Security Consulting offers guarding services to industrial sites, corporate headquarters, sensitive sites (such as test labs, research facilities, chemical and medical related sites), ports and maritime platforms, public and political performances, private residences, banks, hotels, prestigious sites (luxury shops, jewelry events), sporting events, etc.
-            %h4 Human Surveillance
+            %p We are uniquely qualified to provide security solutions customized to your specific situation and needs. In addition to offering the finest bodyguard services available, our outstanding training department offers multiple close protection and bodyguard training programs as well as other security-oriented courses. This allows us to guarantee the quality of our personnel and provide you with the protection that you need – at the highest level.
+
+            %p Our bodyguard and close protection services are suitable for individuals, families, corporate executives, and celebrities who want the peace of mind that comes from our flexible, discreet and reassuring executive protection service.
+
+            %p  
+              %b Security Guards
+            %p ISF2I Security Consulting offers security guard services to industrial sites, corporate headquarters, sensitive sites (such as test labs, research facilities, and chemical- and medical-related sites), ports and maritime platforms, public and political performances, private residences, banks, hotels, prestigious sites (such as luxury shops, jewelry events, and auctions), sporting events, and more.
+
+            %p  
+              %b Human Surveillance
+            %p 
+              We also offer human surveillance services including:
+              •	Surveillance and guarding 
+              •	Implementation of agent or dog team 
+              •	Access control 
+              •	CCTV 
+              •	Quality control and inspection 
+              •	Vulnerability testing and physical intrusion 
+
+            %p  
+              %b Transfers of Value
+            %p If you need to transfer cash, jewelry, coin collections, gold bullion, or anything else of value, you are immediately at risk. IFS2I Security Consulting minimizes risks with its armored car and transfers of value services. We will securely transfer your valuables using highly qualified security officers. In addition, you can make arrangements such as transfers in unmarked vehicles, and location based security.
+
+            %p  
+              %b Our Philosophy
             %p
-              &mdash; Surveillance and guarding
-              %br
-              &mdash; Implementation of agent or dog team
-              %br
-              &mdash; Access Control
-              %br
-              &mdash; CCTV
-              %br
-              &mdash; Quality control and inspection
-              %br
-              &mdash; Vulnerability testing and physical intrusion
-            %h4 Transfers of Value
-            %p IFS2I Security Consulting will securely transfer your valuables through highly qualified security officers. Special arrangements can be made like transfers in unmarked vehicles, location based security, etc. 
-
-          .spacer
-          %a{:name => @sub3[1]}
-          .section.no-image
-            %h1=@sub3[0]
-            %p Our philosophy is to provide every client with exceptional service. We are fully licensed and insured to offer security in guard services in a state of Texas. Our armed and unarmed security guards are professional, dependable and diligent in their duties.  We hire only the best and we guarantee our client's complete satisfaction. A specific training of out security officers develops not only expertise in human supervision but also those skills that guarantee quality of care and service.  
+              Every client deserves exceptional service. We are fully licensed and insured to offer security guard services in Texas. Our armed and unarmed security guards are professional, dependable and diligent in their duties. We hire only the best and we guarantee our client's complete satisfaction. We provide our security guards with continuous training, ensuring expertise in human supervision and skills that guarantee quality protective care and exceptional service.
+              %a{:href => "/contact"}Contact us
+              today for the ultimate in personal protection.
+            

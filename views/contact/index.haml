@@ -13,45 +13,33 @@
 #four.banner
   .center
     .content
-      %img.banner{:alt => "", :src => "/images/banner-5.jpg"}
+      %img.banner{:alt => "", :src => "/images/banner-5a.jpg"}
 
 
 
 .body
   .center
     .content
-      #four.sidebar
-        / .subnav
-        /   %h1=@sub0[0]
-        /   .link
-        /     %h5 
-        /     %p
-        /       %a{:href => "#"+@sub1[1]}
-        /         =@sub1[0]
-        /   .link
-        /     %h5 
-        /     %p
-        /       %a{:href => "#"+@sub2[1]}
-        /         =@sub2[0]
-        /   .link
-        /     %h5 
-        /     %p
-        /       %a{:href => "#"+@sub3[1]}
-        /         =@sub3[0]
+      #four.sidebar.left
         .img
           %a{:href => "http://maps.google.com/maps?q=IFS2I+Arena+Tower+One+Houston+TX,+77074&hl=en&ll=29.70248,-95.516982&spn=0.045328,0.049567&sll=29.700159,-95.516038&sspn=0.011332,0.012392&vpsrc=6&z=15", :target => "_blank"}
             %img{:src => "/images/map.jpg", :alt => "IFS2I on Google Maps"}
           %h1 Contact Us
           %p
-            TEL: + 1 (713) 778 0790
+            %sub HOTLINE
             %br
-            HOTLINE: + 1 (713) 213 4601
+            (713) 778 0790
             %br
-            MOBILE: +1 (713) 213 4601
+            %sub MOBILE
             %br
-            FAX: + 1 (832) 705 3435
+            (713) 302 5121
             %br
-            EMAIL:
+            %sub FAX
+            %br
+            (713) 588 2722
+            %br
+            %sub EMAIL
+            %br
             %a{:href => "mailto:contact@ifs2i.com"} contact@ifs2i.com
           %p
             7322 Southwest Freeway
@@ -66,5 +54,6 @@
           %a{:name => "anchor1"}
           .section.no-image
             %h1 Contact Us
+            %p If you need security consulting services, risk assessments, security training, electronic security, bodyguard and guard services, or help with any other security concern, we'd love to hear from you. Fill out the form below and a representative will respond shortly. Alternately, you can call, fax or email us.
             %p.contact-form
               %iframe.contact{:allowtransparency => "true", :frameborder => "0", :height => "640", :scrolling => "no", :src => "http://media3creative.wufoo.com/embed/r7p3m3/", :width => "100%", :border => "none"}       

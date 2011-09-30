@@ -18,6 +18,8 @@
 	.center
 		@extend .center-container
 		padding: $v-gap 0 ($v-gap/2)
+		border-left: 1px solid #000
+		border-right: 1px solid #000
 		.content
 			@extent .box
 			width: $inside-width
@@ -30,7 +32,6 @@
 				height: $banner-height
 				margin: 0
 				padding: 0
-				border: 1px solid #222
 				
 
 
@@ -44,6 +45,8 @@
 		@extend .center-container
 		@extend .clearfix
 		padding: ($v-gap/2) 0
+		border-left: 1px solid #000
+		border-right: 1px solid #000
 		.content
 			@extent .box
 			width: $inside-width
@@ -55,10 +58,16 @@
 	@extend .box
 	@extend .clearfix
 	position: relative
-	+float-left
 	clear: none
 	width: $sidebar-width
+	
+.sidebar.left
+	+float-left
 	margin: 0 $h-gap $v-gap 0
+
+.sidebar.right
+	+float-right
+	margin: 0 0 $v-gap $h-gap
 	
 
 // Subnavigation-style sidebar box
@@ -67,44 +76,42 @@
 	h1
 		@extend .box
 		@extend .corner-top
-		font-family: "Embed-Helvetica-bold"
+		@extend .font-base
 		position: relative
 		color: $option-title
 		background: $option-title-bg
 		width: ($option-width - ($h-gap *2))
 		margin: 0 auto
-		padding: 1em 0 0.5em
-		font-size: 15px
+		padding: 1em 0
+		font-size: 18px
 		font-weight: 100
+		text-transform: uppercase
 		text-align: left
-		text-transform: capitalize
-		word-spacing: -0.1em
-		letter-spacing: -0.07em
 	h3
 		@extend .box
 		@extend .corner-top
 		@extend .font-base
 		position: relative
-		color: $text-dark
+		color: $text-light
 		background: $option-title-bg
 		width: ($option-width - ($h-gap *2))
 		margin: 0 auto ($v-gap / 2)
 		padding: 0
-		font-size: 12px
+		font-size: 13px
 		font-weight: bold
 		text-transform: none
 		text-align: left
 
 .link
 	@extend .clearfix
-	@extend .font-trebuchet
+	@extend .font-base
 	@extend .box
 	position: relative
 	width: ($option-width - ($h-gap *2))
 	margin: 0 auto
 	padding: 0.5em 0
-	font-size: 11px
-	border-bottom: 1px dotted $option-border
+	font-size: 13px
+	border-bottom: 1px dotted $line-color
 	&:last-child
 		border-bottom: none
 		margin-bottom: ($v-gap / 2)
@@ -117,8 +124,8 @@
 		top: 5px
 		width: 7px
 		height: 7px
-		background: $secondary-dark
-		font-size: 11px
+		background: $gray-med
+		font-size: 13px
 		text-align: center
 	p
 		@extend .box
@@ -128,12 +135,12 @@
 		width: 200px
 		margin: 0
 		padding: 0 0 0 1em
-		font-size: 12px
+		font-size: 13px
 		a
-			font-size: 12px
+			font-size: 13px
 			color: $option-link
 			&:hover
-				color: $option-link-hover
+				color: #fff
 				text-decoration: none
 					
 // Text-style sidebar box
@@ -145,22 +152,12 @@
 		margin: 0 auto ($v-gap / 2)
 		padding: 0
 		color: $section-text
-		font-size: 12px
+		font-size: 13px
 		font-weight: 200
 		text-align: justify
 		line-height: 1.7em
 		&:last-child
 			margin-bottom: ($v-gap / 2)
-		img.flag
-			@extend .box
-			position: relative
-			width: 26px
-			height: 14px
-			border: none
-			top: 1px
-			margin: 0 3px 0 0
-			padding: 0
-			border: 1px solid $secondary-dark
 
 // Button-style sidebar box
 .button
@@ -182,7 +179,7 @@
 			margin: 0
 			padding: 6px 2em 7px 2em
 			color: #fff
-			font-size: 11px
+			font-size: 13px
 			font-weight: 200
 			text-transform: uppercase
 			text-decoration: none
@@ -222,7 +219,7 @@
 			@extend .clearfix
 			position: relative
 			padding: 0 0 ($v-gap) 0
-			border-bottom: 1px dotted $section-border
+			//border-bottom: 1px dotted $section-border
 			&:last-child
 				padding-bottom: 0
 				border-bottom: none
@@ -230,55 +227,60 @@
 				@extend .box
 				@extend .corner-all
 				@extend .bg-gradient-primary
-				+float-left
+				+float-right
 				clear: left
 				width: $content-img-w
 				height: $content-img-h
-				margin: 0 ($h-gap / 2) ($v-gap / 2) 0
+				margin: $corner-radius 0 ($v-gap / 2) ($h-gap / 2)
+				border-right: 1px solid #111
+				border-bottom: 1px solid #111
 				z-index: 100
 			h1
-				font-family: "Embed-Helvetica-bold"
+				//@extend .font-base
+				@extend .font-base
 				@extend .box
 				width: ($content-width - ($content-img-w + ($h-gap / 2)))
 				margin: $corner-radius 0 ($v-gap/3) ($content-img-w + ($h-gap / 2))
 				padding: 0 3em 0em $corner-radius
 				color: $section-title !important
-				font-size: 24px
+				font-size: 21px
 				font-weight: 100
-				text-transform: capitalize
-				word-spacing: -0.1em
-				letter-spacing: -0.07em
-				border-left: $corner-radius solid #222				
+				text-transform: uppercase
+				text-shadow: 2px 2px 1px #000
+				word-spacing: .1em
+				letter-spacing: .05em
+				//border-bottom: 1px solid $section-lines
+				border-left: $corner-radius solid $primary				
 			h4
-				@extend .font-trebuchet
+				@extend .font-base
 				@extend .box
 				width: ($content-width)
-				margin: $corner-radius 0
+				margin: 10px 0
 				padding: 0 0 0 $corner-radius
-				color: $section-title
-				font-size: 15px
+				color: $primary-light
+				font-size: 14px
 				font-weight: bold
-				text-align: justify
-				text-transform: uppercase
-				line-height: 1.7em				
+				text-align: left
+				text-shadow: 1px 1px 0px #000
+				line-height: 1.7em
 			p
-				@extend .font-trebuchet
+				@extend .font-base
 				@extend .box
 				width: ($content-width)
 				margin: $corner-radius 0 ($v-gap/3) 0
-				padding: 0 0 0 0
+				padding: 0 0 0 $corner-radius
 				color: $section-text
-				font-size: 12px
-				font-weight: 200
+				font-size: 13px
+				font-weight: 100
 				text-align: justify
-				line-height: 1.7em
+				line-height: 1.4em
 				&:last-child
 					margin-bottom: 0
 				a
-					color: $primary-light
+					color: $section-link
 					text-decoration: none
 					&:hover
-						color: $primary
+						color: $section-link-hover
 
 .container-setup
 	@extend .box
@@ -333,8 +335,18 @@
 	padding: 0
 		
 .youtube-sm   // In sidebar
+	@extend .text
 	@extend .font-base
 	@extend .box
-	width: ($option-width - ($h-gap *2))
-	margin: 0 auto ($v-gap / 2)
-	padding: 0
+	width: ($option-width)
+	padding: 4px
+	
+img.skype
+	@extend .box
+	float: none !important
+	width: auto !important
+	height: auto !important
+	margin: $corner-radius 0 ($v-gap / 2) 0 !important
+	background: transparent !important
+	border: 0 !important
+	z-index: 100

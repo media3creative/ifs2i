@@ -1,5 +1,6 @@
 .font-helvetica {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.025em;
 }
 
 .font-arial {
@@ -14,15 +15,23 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .image-slider .center .captionContainer h3 {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
+}
+
+.font-myriad {
+  font-family: "Myriad Pro", "Myriad", "Trebuchet", Verdana, Arial, sans-serif;
+}
+
+.font-cambria, .font-base, .image-slider .center .captionContainer h1, .image-slider .center .captionContainer h3 {
+  font-family: "Cambria", "Georgia", "Garamond", times, serif;
 }
 
 .bg-gradient-primary, .image-slider .center .captionContainer p.link {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#dc2e2c), to(#680000));
+  background: -webkit-gradient(linear, left top, left bottom, from(#e60000), to(#990000));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #dc2e2c, #680000);
+  background: -moz-linear-gradient(top, #e60000, #990000);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -31,9 +40,9 @@
 
 .bg-gradient-reverse, .image-slider .center .captionContainer p.link:hover {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#680000), to(#dc2e2c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#e60000));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #680000, #dc2e2c);
+  background: -moz-linear-gradient(top, #990000, #e60000);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -42,21 +51,23 @@
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#dad7cb), to(#efecde));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7aa5d), to(#f4912d));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #dad7cb, #efecde);
+  background: -moz-linear-gradient(top, #f7aa5d, #f4912d);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-dark, endColorstr=$secondary);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-dark, endColorstr=$secondary);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #dad7cb;
+  background: #858585;
+  color: black;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #dad7cb;
+  background: #858585;
+  color: black;
 }
 
 .corner-top-left {
@@ -167,7 +178,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: #3a3735;
+  background: #3a3a3a;
 }
 
 .box, .center-container, .image-slider .center, .image-slider, .image-slider .center .captionContainer, .image-slider .center .captionContainer h1, .image-slider .center .captionContainer h3, .image-slider .center .captionContainer p.link, .nivoSlider, .nivoSlider img, #slider-wrapper, #slider {
@@ -197,12 +208,16 @@ p {
 }
 
 b {
-  color: #dddddd !important;
-  font-weight: bold;
+  color: #e60000 !important;
+  font-weight: 100;
+  font-size: 110%;
+  text-shadow: 1px 1px 0px black;
+  line-height: 50px;
 }
 
 .font-helvetica {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.025em;
 }
 
 .font-arial {
@@ -217,15 +232,23 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .image-slider .center .captionContainer h3 {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
+}
+
+.font-myriad {
+  font-family: "Myriad Pro", "Myriad", "Trebuchet", Verdana, Arial, sans-serif;
+}
+
+.font-cambria, .font-base, .image-slider .center .captionContainer h1, .image-slider .center .captionContainer h3 {
+  font-family: "Cambria", "Georgia", "Garamond", times, serif;
 }
 
 .bg-gradient-primary, .image-slider .center .captionContainer p.link {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#dc2e2c), to(#680000));
+  background: -webkit-gradient(linear, left top, left bottom, from(#e60000), to(#990000));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #dc2e2c, #680000);
+  background: -moz-linear-gradient(top, #e60000, #990000);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -234,9 +257,9 @@ b {
 
 .bg-gradient-reverse, .image-slider .center .captionContainer p.link:hover {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#680000), to(#dc2e2c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#e60000));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #680000, #dc2e2c);
+  background: -moz-linear-gradient(top, #990000, #e60000);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -245,21 +268,23 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#dad7cb), to(#efecde));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7aa5d), to(#f4912d));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #dad7cb, #efecde);
+  background: -moz-linear-gradient(top, #f7aa5d, #f4912d);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-dark, endColorstr=$secondary);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-dark, endColorstr=$secondary);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #dad7cb;
+  background: #858585;
+  color: black;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #dad7cb;
+  background: #858585;
+  color: black;
 }
 
 .corner-top-left {
@@ -365,10 +390,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: url(/images/nav_bg.png) repeat;
 }
 .image-slider .center .captionContainer h1 {
-  font-family: "EmbedFont-1";
   margin: 50px 0 6px 0;
   padding: 0;
-  color: #ad1b1a;
+  color: #990000;
   font-size: 30px;
   font-weight: 100;
   text-align: left;
@@ -382,7 +406,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   top: 0px;
   margin: 0 0 6px 0;
   padding: 0;
-  color: #efefef;
+  color: white;
   font-size: 14px;
   font-weight: 200;
   text-align: left;
@@ -393,7 +417,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   bottom: 15px;
   left: 30px;
   color: white;
-  border: 1px solid #680000;
+  border: 1px solid #990000;
 }
 .image-slider .center .captionContainer p.link a {
   font-family: "EmbedFont-1";
@@ -515,8 +539,8 @@ a.nivo-nextNav {
   height: 300px;
   margin: 0 auto;
   overflow: hidden;
-  border: 1px solid #111111;
-  background: #efefef;
+  border: 1px solid black;
+  background: #858585;
 }
 
 #slider {

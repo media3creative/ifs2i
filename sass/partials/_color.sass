@@ -3,83 +3,86 @@
 @import compass/css3
 
 // COLOR DEFINITIONS
-$primary: #680000
-//$primary-light: lighten(adjust-hue($primary, 0%), +20)
-$primary-light: #dc2e2c
-$primary-dark: #ad1b1a
-$secondary: #efecde
+$primary: #900
+$primary-light: lighten(adjust-hue($primary, 0%), +15)
+//$primary-light: #0a65b4
+$primary-dark: darken($primary, +10)
+$secondary: #f4912d
 $secondary-light: lighten(adjust-hue($secondary, 0%), +10)
 //$secondary-light: #ebd716
-$secondary-dark: #dad7cb
+$secondary-dark: darken($secondary, +5)
 $accent: #900
-$apple-highlight:	#b4d5ff
+$apple-highlight:	#b4d5ff // do not change
 
-$line-color: #ddd
+$line-color: #404040
 
-$gray-dark: #333
-$gray-med: #808080
-$gray-light: #efefef
+$gray-darker: #171717
+//$gray-dark: #303030
+$gray-dark: #3a3a3a
+$gray-med: #666
+$gray-light: #858585
 
 
 // COLOR APPLICATION
-$html-bg:									#000
-$body-bg:									$html-bg
-$center-container-bg:			#3a3735
+$html-bg:									transparent
+$body-bg:									transparent
+$center-container-bg:			$gray-dark
 
 $text-dark:								#000
-$text-light:							$gray-med
-$text-highlight:					$secondary-dark
+$text-light:							$gray-light
+$text-highlight:					$gray-light
 
 $header-title:						#fff
 $header-text:							#fff
 $header-link:							$secondary
 $header-link-hover:				#000
-$header-border:						#000
+$header-border:						$primary-dark
 
-$nav-text:								$secondary-dark
-$nav-text-hover:					$primary-light
+$nav-text:								$primary-dark
+$nav-text-hover:					#fff
 $nav-lines:								$primary-dark
 $nav-bg:									transparent
-$nav-dropdown-text:				$primary-light
+$nav-dropdown-text:				#fff
 $nav-dropdown-hover:			#fff
-$nav-dropdown-bg:					$primary
-$nav-dropdown-bg-hover:		$primary-light
-$nav-dropdown-border:			$gray-dark
+$nav-dropdown-bg:					$gray-darker
+$nav-dropdown-bg-hover:		$primary
+$nav-dropdown-border:			$gray-darker
 $nav-dropdown-accent:			$secondary
 
 $image-slider-bg:					$gray-light
-$image-slider-title:			$primary-dark
+$image-slider-title:			$primary
 $image-slider-text: 			$gray-dark
 $image-slider-link:				#fff
 $image-slider-link-hover:	#fff
-$image-slider-border:			#111
+$image-slider-border:			#000
 
-$section-title:						$primary-dark
-$section-text:						$text-light
-$section-lines:						$gray-light
+$section-title:						$text-light
+$section-text:						#fff
+$section-link:						$secondary
+$section-link-hover:			#fff
+$section-lines:						#000
 $section-border:					$secondary
 
-$option-title:						$primary-dark
+$option-title:						$primary
 $option-title-bg:					transparent
-$option-text:							#000
-$option-link:							$primary
-$option-link-hover:				$primary-light
-$option-bg:								#211f1e
-$option-border:						#222
+$option-text:							$gray-med
+$option-link:							$secondary
+$option-link-hover:				$secondary
+$option-bg:								$gray-darker
+$option-border:						$line-color
 
-$footer-title:						$primary
-$footer-text:							$text-light
-$footer-link:							#ccc
-$footer-link-hover:				#111
-$footer-bg:								$primary-dark
-$footer-border:						#222
+$footer-title:						$secondary
+$footer-text:							$gray-med
+$footer-link:							$gray-med
+$footer-link-hover:				$gray-light
+$footer-border:						#000
 
-$m3c-bg:									$primary
-$m3c-border:							#000
-$m3c-text:								$primary-light
-$m3c-link:								$secondary
-$m3c-link-hover:					$secondary-dark
-$m3c-link-border:					$secondary-dark
+$m3c-bg:									#000
+$m3c-border:							$gray-dark
+$m3c-text:								$gray-med
+$m3c-link:								$primary
+$m3c-link-hover:					#fff
+$m3c-link-border:					$line-color
 
 $opacity:									0.75
 $opacity-pc:							($opacity*100)			// DO NOT CHANGE, IS UPDATED BY LINE ABOVE
@@ -110,17 +113,19 @@ $opacity-pc:							($opacity*100)			// DO NOT CHANGE, IS UPDATED BY LINE ABOVE
 
 .bg-gradient-secondary
 	/* For WebKit (Safari, Google Chrome etc) */
-	background: -webkit-gradient(linear, left top, left bottom, from($secondary-dark), to($secondary))
+	background: -webkit-gradient(linear, left top, left bottom, from($secondary-light), to($secondary))
 	/* For Mozilla/Gecko (Firefox etc) */
-	background: -moz-linear-gradient(top, $secondary-dark, $secondary)
+	background: -moz-linear-gradient(top, $secondary-light, $secondary)
 	/* For Internet Explorer 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-dark, endColorstr=$secondary)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary)
 	/* For Internet Explorer 8 */
-	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-dark, endColorstr=$secondary)
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary)
 
 
 // CURSOR HIGHLIGHTING
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection
 	background: $text-highlight
+	color: #000
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection
 	background: $text-highlight
+	color: #000

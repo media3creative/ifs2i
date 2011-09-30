@@ -1,6 +1,6 @@
 - @title = " | Security Training"
 - @subtitle = ""
-- @body_class = "three"
+- @body_class = "four"
 
 - @sub0 = ["Security Training", "/training"]
 - @sub1 = ["sss", "sss"]
@@ -19,31 +19,24 @@
 .body
   .center
     .content
-      #three.sidebar
-        / .subnav
-        /   %h1=@sub0[0]
-        /   .link
-        /     %h5 
-        /     %p
-        /       %a{:href => "#"+@sub1[1]}
-        /         =@sub1[0]
-        /   .link
-        /     %h5 
-        /     %p
-        /       %a{:href => "#"+@sub2[1]}
-        /         =@sub2[0]
+      #three.sidebar.right
         .text
           %h1 Contact Us
           %p
-            TEL: + 1 (713) 778 0790
+            %sub HOTLINE
             %br
-            HOTLINE: + 1 (713) 213 4601
+            (713) 778 0790
             %br
-            MOBILE: +1 (713) 213 4601
+            %sub MOBILE
             %br
-            FAX: + 1 (832) 705 3435
+            (713) 302 5121
             %br
-            EMAIL:
+            %sub FAX
+            %br
+            (713) 588 2722
+            %br
+            %sub EMAIL
+            %br
             %a{:href => "mailto:contact@ifs2i.com"} contact@ifs2i.com
           %p
             7322 Southwest Freeway
@@ -57,6 +50,19 @@
           %a{:name => @sub0[1]}
           .section.no-image
             %h1=@sub0[0]
-            %p IFS2I Security Consulting is a unique company offering numerous programs of bodyguard training and executive protection training to fit all of our students needs. Each of our courses is made for specific segment of a population seeking to enter the security industry. We train selected applicants to the highest possible commercial level with the most experienced trainers available. IFS2I is a unique institution as one of the few private schools in the country that offers courses for our students through out the world.  It conducts its trainings abroad in France, Spain, Russia, Kazakhstan, Middle East and Western Africa as well as in United States&mdash;in Houston, TX.  All of our courses are held in different languages according to different wishes of a group. 
-            %p We believe that there is no standard training program that could possibly fit every client need. Following that ideology we develop every course individually to meet our clients' demanding specifications. The flexibility of our instructor's staff and training programs means that each client will benefit from custom training event. All of our training programs can be provided anywhere suitable facilities are available.  Keeping this in mind we can bring our course to you if you cannot use our facility. 
+            %p IFS2I Security Consulting offers custom security training programs for companies seeking a stronger security team as well as a variety of bodyguard and executive training courses. With numerous courses available along with custom training options, we have courses covering virtually any security situation you may encounter. 
+
+            %p 
+              %b Our Security Training Instructors
+            %p Our courses are taught by an elite team of experienced security professionals with impressive credentials. Our high standards ensure that you're learning from an expert who knows both theory and "real world" security tactics. 
+
+            %p 
+              %b Thinking of Entering the Security Industry?
+            %p Each of our courses has been developed for specific population segments seeking to enter the security industry. We train selected applicants to the highest possible commercial level with the most experienced trainers available. We are one of the few private schools in the country that offers courses to students throughout the world. We conduct security training sessions in France, Spain, Russia, Kazakhstan, the Middle East, and Western Africa as well as in the United States at our Houston, Texas facility. We conduct our courses in the languages specified by our attendees.
+
+            %p 
+              %b Custom Security Training Solutions
+            %p We believe that standard training programs cannot possibly fit every client need. Following that ideology, we develop each course to our clients' demanding specifications. We are committed to providing individual and flexible training solutions for custom training events that meet your specific needs. 
+
+            %p In fact, we can conduct our training programs virtually anywhere, as long as suitable facilities are available. We can bring our security training program to you for your convenience.
             
