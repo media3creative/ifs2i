@@ -35,8 +35,9 @@
 - @linkB1 = ["Security Consulting", "/security"]
 - @linkB2 = ["Guard / Bodyguard", "/guard"]
 - @linkB3 = ["Electronic Security", "/electronic"]
-- @linkB4 = ["link name", "/path"]
-- @linkB5 = ["link name", "/path"]
+- @linkB4 = ["Training in US", "/st-usa"]
+- @linkB5 = ["Training in Europe", "/st-europe"]
+- @linkB6 = ["Training in Russia", "/st-russia"]
 
 - @linkC1 = @link5
 - @linkC2 = ["Facebook", "http://www.facebook.com/pages/Ifs2i-Security-Consulting/171593209578690"]
@@ -207,17 +208,29 @@
               =@link3[0]
             .sub
               %ul
-                / %li
-                /   %h2 Header
                 %li
-                  %a{:href => "/security"} Security Consulting
+                  %a{:href => @linkB1[1]}
+                    =@linkB1[0]
                 %li
-                  %a{:href => "/guard"} Guard / Bodyguard
+                  %a{:href => @linkB2[1]}
+                    =@linkB2[0]
                 %li
-                  %a{:href => "/electronic"} Electronic Security
+                  %a{:href => @linkB3[1]}
+                    =@linkB3[0]
           %li
             %a#four.topnav{:href => @link4[1]}
               =@link4[0]
+            .sub
+              %ul
+                %li
+                  %a{:href => @linkB4[1]}
+                    =@linkB4[0]
+                %li
+                  %a{:href => @linkB5[1]}
+                    =@linkB5[0]
+                %li
+                  %a{:href => @linkB6[1]}
+                    =@linkB6[0]
           %li
             %a#five.topnav.last{:href => @link5[1]}
               =@link5[0]
@@ -225,34 +238,6 @@
 
     .content
       = yield
-      / #footer
-      /   .center
-      /     .content
-      /       &nbsp;
-      /       .row
-      /         %p.logo-sm
-      /           %img{:src => "/images/logo-sm2.png", :alt => "IFS2I Logo"}
-      /       .row
-      /         %p
-      /           =@linkA1[0]
-      /           =" - "
-      /           %a{:href => @linkA2[1]}
-      /             =@linkA2[0]
-      /       .row
-      /         %p
-      /           %a{:href => @linkB1[1], :target => "_blank"} 
-      /             %img.icon{:src => "/images/facebook-color.png"}
-      /             =@linkB1[0]              
-      /           %a{:href => @linkB2[1], :target => "_blank"} 
-      /             %img.icon{:src => "/images/twitter-color.png"}
-      /             =@linkB2[0]
-      /           / %a{:href => @linkB3[1], :target => "_blank"} 
-      /           /   %img.icon{:src => "/images/linkedin-color.png"}
-      /           /   =@linkB3[0]
-      /           %a{:href => @linkB4[1], :target => "_blank"} 
-      /             %img.icon{:src => "/images/youtube.jpeg"}
-      /             =@linkB4[0]
-
     #footer
       .center
         .content

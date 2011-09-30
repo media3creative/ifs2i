@@ -3,8 +3,9 @@
 - @body_class = "four"
 
 - @sub0 = ["Security Training", "/training"]
-- @sub1 = ["sss", "sss"]
-- @sub2 = ["sss", "sss"]
+- @sub1 = ["USA", "/st-usa"]
+- @sub2 = ["Europe", "/st-europe"]
+- @sub3 = ["Russia", "/st-russia"]
 
 %link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
 
@@ -20,6 +21,23 @@
   .center
     .content
       #three.sidebar.right
+        .subnav
+          %h1 Training Locations
+          .link
+            %h5 
+            %p
+              %a{:href => @sub1[1]}
+                =@sub1[0]
+          .link
+            %h5 
+            %p
+              %a{:href => @sub2[1]}
+                =@sub2[0]
+          .link
+            %h5 
+            %p
+              %a{:href => @sub3[1]}
+                =@sub3[0]
         .text
           %h1 Contact Us
           %p

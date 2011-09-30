@@ -1,0 +1,47 @@
+- @title = " | Security Training"
+- @subtitle = " | Russia"
+- @body_class = "four"
+
+- @sub0 = ["Security Training in Russia", "/st-russia"]
+- @sub1 = ["USA", "/st-usa"]
+- @sub2 = ["Europe", "/st-europe"]
+- @sub3 = ["Russia", "/st-russia"]
+
+%link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+
+
+#three.banner
+  .center
+    .content
+      %img.banner{:alt => "", :src => "/images/banner-4-3.jpg"}
+
+
+
+.body
+  .center
+    .content
+      #three.sidebar.right
+        .subnav
+          %h1 Training Locations
+          .link
+            %h5 
+            %p
+              %a{:href => @sub1[1]}
+                =@sub1[0]
+          .link
+            %h5 
+            %p
+              %a{:href => @sub2[1]}
+                =@sub2[0]
+          .link
+            %h5 
+            %p
+              %a{:href => @sub3[1]}
+                =@sub3[0]
+
+      #three.main
+        .content
+          %a{:name => @sub0[1]}
+          .section.no-image
+            %h1=@sub0[0]
+            %p Information coming soon.
