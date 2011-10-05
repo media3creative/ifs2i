@@ -23,11 +23,11 @@
   font-family: "Myriad Pro", "Myriad", "Trebuchet", Verdana, Arial, sans-serif;
 }
 
-.font-cambria, .font-base, ul#topnav {
+.font-cambria, .font-base, #subheader .center #phone p, ul#topnav {
   font-family: "Cambria", "Georgia", "Garamond", times, serif;
 }
 
-.bg-gradient-primary, #header, .center {
+.bg-gradient-primary, #header, #header .center {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#e60000), to(#990000));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -172,7 +172,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   clear: both;
 }
 
-.center-container, .center {
+.center-container, #header .center, #subheader .center {
   position: relative;
   width: 960px;
   height: 100%;
@@ -181,14 +181,14 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: #3a3a3a;
 }
 
-.box, .center-container, .center, #header, .center #logo1, ul#topnav a.topnav, ul#topnav .sub ul li a {
+.box, .center-container, #header .center, #subheader .center, #header, #header .center #logo1, #subheader, #subheader .center #phone p, ul#topnav a.topnav, ul#topnav .sub ul li a {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.opaque, .center #logo1 a:hover {
+.opaque, #header .center #logo1 a:hover {
   opacity: 0.75;
   filter: alpha(opacity=75);
 }
@@ -240,11 +240,11 @@ b {
   font-family: "Myriad Pro", "Myriad", "Trebuchet", Verdana, Arial, sans-serif;
 }
 
-.font-cambria, .font-base, ul#topnav {
+.font-cambria, .font-base, #subheader .center #phone p, ul#topnav {
   font-family: "Cambria", "Georgia", "Garamond", times, serif;
 }
 
-.bg-gradient-primary, #header, .center {
+.bg-gradient-primary, #header, #header .center {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#e60000), to(#990000));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -379,25 +379,48 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding: 0;
   border-bottom: 2px solid #660000;
 }
-
-.center #logo1 {
+#header .center #logo1 {
   position: absolute;
   top: 10px;
   left: 35px;
   margin: 0;
 }
-.center #logo1 a {
+#header .center #logo1 a {
   display: block;
   margin: 0;
   padding: 0;
 }
-.center #logo1 a img {
+#header .center #logo1 a img {
   width: 195px;
   height: 60px;
   margin: 0;
   padding: 0;
   border: 0;
   background: transparent;
+}
+
+#subheader {
+  width: 100%;
+  height: 27px;
+  margin: 0;
+  padding: 0;
+  background: #666666;
+  border-bottom: 2px solid #222222;
+}
+#subheader .center {
+  background: transparent;
+}
+#subheader .center #phone {
+  margin: 0 0 0 80px;
+}
+#subheader .center #phone p {
+  color: white !important;
+  font-size: 17px;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px black;
+  word-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 
 ul#topnav {
