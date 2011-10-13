@@ -9,24 +9,27 @@
 @import partials/corners
 
 #footer
+	background: #161616
+	border-top: 4px solid #000
+	border-left: 1px solid #000
+	border-right: 1px solid #000
 	.center
 		//@extend .center-container
 		@extend .box
 		@extend .clearfix
 		@extend .font-base
+		position: relative
+		width: $center-width
+		min-height: 200px
 		margin: 0 auto
-		padding: ($v-gap / 2) 0 $v-gap
-		background: #161616
-		border-top: 4px solid #000
-		border-left: 1px solid #000
-		border-right: 1px solid #000
+		padding: 20px 0 0 0
 		.content
 			@extent .box
 			//@extend .bg-gradient-gray-light
 			@extend .corner-all
 			@extend .clearfix
 			width: 600px
-			margin: 0 auto 0 394px
+			margin: 0 auto 0 250px
 			padding: 0
 			height: 100px
 			.column

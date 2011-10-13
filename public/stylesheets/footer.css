@@ -372,18 +372,23 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-#footer .center {
-  margin: 0 auto;
-  padding: 15px 0 30px;
+#footer {
   background: #161616;
   border-top: 4px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
+#footer .center {
+  position: relative;
+  width: 960px;
+  min-height: 200px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
 #footer .center .content {
 @extent .box;
   width: 600px;
-  margin: 0 auto 0 394px;
+  margin: 0 auto 0 250px;
   padding: 0;
   height: 100px;
 }
