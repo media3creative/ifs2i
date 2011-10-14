@@ -33,9 +33,9 @@
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #e60000, #990000);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#bf0000, endColorstr=#990000);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#bf0000, endColorstr=#900)";
 }
 
 .bg-gradient-reverse, .button p.link:hover {
@@ -44,9 +44,9 @@
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #990000, #e60000);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#990000, endColorstr=#bf0000);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#990000, endColorstr=#bf0000)";
 }
 
 .bg-gradient-secondary {
@@ -55,9 +55,9 @@
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #f7aa5d, #f4912d);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff962e, endColorstr=#f4912d);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff962e, endColorstr=#f4912d)";
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
@@ -250,9 +250,9 @@ b {
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #e60000, #990000);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#bf0000, endColorstr=#990000);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#bf0000, endColorstr=#900)";
 }
 
 .bg-gradient-reverse, .button p.link:hover {
@@ -261,9 +261,9 @@ b {
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #990000, #e60000);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#990000, endColorstr=#bf0000);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#990000, endColorstr=#bf0000)";
 }
 
 .bg-gradient-secondary {
@@ -272,9 +272,9 @@ b {
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #f7aa5d, #f4912d);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff962e, endColorstr=#f4912d);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff962e, endColorstr=#f4912d)";
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
